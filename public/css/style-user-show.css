@@ -1,0 +1,72 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+p, h2{
+  font-family: 'Roboto', sans-serif;
+}
+p, .historico{
+  color: #000;
+}
+.user-top{
+  color: #000;
+}
+.btn{
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.well{
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.well-historico{
+  margin-top: 20px;
+}
+
+.disponivel, .pendente, .indisponivel {
+  display: inline-block;
+  color: #fff;
+  padding-right: 5px;
+  border-radius: 7%;
+  padding-left: 5px;
+}
+
+.disponivel {
+  background-color: green;
+}
+
+.pendente {
+  background-color: #FF8C00;
+}
+
+.indisponivel {
+  background-color: red;
+}
+
+.letra-perfil{
+  color: #fff;
+  font-size: 12em;
+
+}
+.chat{
+  border-radius: 5%;
+  color: #fff;
+  display: inline-block;
+  background-color: green;
+  padding: 3px 5px 3px 5px;
+}
+.nenhum-historico{
+  margin-top: 100px;
+  font-size: 3em;
+  font-family: 'Amatic SC', cursive;
+}
+
+#chat-button {
+	cursor: pointer;
+}

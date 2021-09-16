@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.date-hora:hover {
+  color: #2a88bd;
+}
+
+.date-hora {
+  color: gray;
+  font-size: 0.8em;
+  float: right;
+  font-family: 'Yantramanav', sans-serif;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,289 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>User &mdash; documentação auditorium 0.0.1</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Índice"
+              href="../genindex.html"/>
+        <link rel="search" title="Buscar" href="../search.html"/>
+    <link rel="top" title="documentação auditorium 0.0.1" href="../index.html"/>
+        <link rel="up" title="Models" href="../models.html"/>
+        <link rel="next" title="Call" href="call.html"/>
+        <link rel="prev" title="Request" href="request.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> auditorium
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Ajuda:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../sobre.html">Sobre</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Índice:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../models.html">Models</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="auditorium.html">Auditorium</a></li>
+<li class="toctree-l2"><a class="reference internal" href="request.html">Request</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">User</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#atributos">Atributos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#views">Views</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="call.html">Call</a></li>
+<li class="toctree-l2"><a class="reference internal" href="message.html">Message</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../helpers.html">Helpers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../events.html">Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../listeners.html">Listeners</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notifications.html">Notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../outros.html">Outros</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">auditorium</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../models.html">Models</a> &raquo;</li>
+        
+      <li>User</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/models/user.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="user">
+<h1>User<a class="headerlink" href="#user" title="Link permanente para este título">¶</a></h1>
+<p><code class="docutils literal"><span class="pre">User</span></code> é o model que representa um usuário. Sua tabela correspondente no banco de dados
+se chama <code class="docutils literal"><span class="pre">users</span></code>.</p>
+<div class="section" id="atributos">
+<h2>Atributos<a class="headerlink" href="#atributos" title="Link permanente para este título">¶</a></h2>
+<dl class="docutils">
+<dt>name <code class="docutils literal"><span class="pre">VARCHAR</span></code></dt>
+<dd>Nome do usuário.</dd>
+<dt>email <code class="docutils literal"><span class="pre">VARCHAR</span></code></dt>
+<dd>Email do usuário, utilizado para o login. Deve ser único.</dd>
+<dt>password <code class="docutils literal"><span class="pre">VARCHAR</span></code></dt>
+<dd>Senha do usuário, utilizada para o login.</dd>
+<dt>description <code class="docutils literal"><span class="pre">TEXT</span></code></dt>
+<dd>Descrição do usuário, idealmente seu cargo. Ex.: “Coordenador de Sistemas de Informação”.</dd>
+<dt>color <code class="docutils literal"><span class="pre">CHAR(7)</span></code></dt>
+<dd>Código de cor do avatar do usuário em formato hexadecimal.</dd>
+<dt>cel <code class="docutils literal"><span class="pre">VARCHAR(19)</span></code></dt>
+<dd>Número de telefone do usuário.</dd>
+</dl>
+</div>
+<div class="section" id="views">
+<h2>Views<a class="headerlink" href="#views" title="Link permanente para este título">¶</a></h2>
+<dl class="docutils">
+<dt>show</dt>
+<dd>Perfil do usuário.</dd>
+<dt>index</dt>
+<dd>Lista de usuários.</dd>
+<dt>edit</dt>
+<dd>Página de edição do usuário.</dd>
+</dl>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="call.html" class="btn btn-neutral float-right" title="Call" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="request.html" class="btn btn-neutral" title="Request" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Evandro Murilo, Valdeir Cesconeto.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

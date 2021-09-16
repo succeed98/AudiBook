@@ -1,0 +1,38 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.letra-perfil-member{
+  padding-top: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#letra{
+  color: #fff;
+  font-size: 1em;
+}
+
+.nome-member, .nome-member:hover{
+  text-decoration: none;
+  color: #000;
+}
+.nome-member{
+  font-size: 15px;
+}
+.nome-user-relacionada{
+  white-space: nowrap;
+  width: 170px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 767px){
+  .nome-user-relacionada{
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

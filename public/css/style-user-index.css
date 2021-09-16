@@ -1,0 +1,28 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+label, span{
+  color: #000;
+}
+a:hover, a:link{
+  text-decoration: none;
+  color: #000;
+}
+
+.user{
+  font-size: 20px;
+  color: #000;
+}
+
+.title-user{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  color: #000;
+}
+.caixa-size{
+  margin-bottom: 30px;
+}

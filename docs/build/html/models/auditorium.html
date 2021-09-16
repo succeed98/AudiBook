@@ -1,0 +1,297 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Auditorium &mdash; documentação auditorium 0.0.1</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Índice"
+              href="../genindex.html"/>
+        <link rel="search" title="Buscar" href="../search.html"/>
+    <link rel="top" title="documentação auditorium 0.0.1" href="../index.html"/>
+        <link rel="up" title="Models" href="../models.html"/>
+        <link rel="next" title="Request" href="request.html"/>
+        <link rel="prev" title="Models" href="../models.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> auditorium
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Ajuda:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../sobre.html">Sobre</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Índice:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../models.html">Models</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Auditorium</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#atributos">Atributos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#metodos">Métodos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#views">Views</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="request.html">Request</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user.html">User</a></li>
+<li class="toctree-l2"><a class="reference internal" href="call.html">Call</a></li>
+<li class="toctree-l2"><a class="reference internal" href="message.html">Message</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../helpers.html">Helpers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../events.html">Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../listeners.html">Listeners</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notifications.html">Notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../outros.html">Outros</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">auditorium</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../models.html">Models</a> &raquo;</li>
+        
+      <li>Auditorium</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/models/auditorium.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="auditorium">
+<h1>Auditorium<a class="headerlink" href="#auditorium" title="Link permanente para este título">¶</a></h1>
+<p><code class="docutils literal"><span class="pre">Auditorium</span></code> é o model que representa um auditório. Sua tabela correspondente
+no banco de dados se chama <code class="docutils literal"><span class="pre">auditoria</span></code>.</p>
+<div class="section" id="atributos">
+<h2>Atributos<a class="headerlink" href="#atributos" title="Link permanente para este título">¶</a></h2>
+<dl class="docutils">
+<dt>name <code class="docutils literal"><span class="pre">VARCHAR(20)</span></code></dt>
+<dd>Nome do auditório</dd>
+<dt>capacity <code class="docutils literal"><span class="pre">INTEGER</span></code></dt>
+<dd>Quantas pessoas o auditório comporta.</dd>
+<dt>accessible <code class="docutils literal"><span class="pre">BOOLEAN</span></code></dt>
+<dd>Se o auditório preenche os requisitos de acessibilidade.</dd>
+<dt>location <code class="docutils literal"><span class="pre">VARCHAR(100)</span></code></dt>
+<dd>Localização do auditório.</dd>
+<dt>obs <code class="docutils literal"><span class="pre">TEXT</span></code></dt>
+<dd>Observações adicionais sobre o auditório.</dd>
+</dl>
+</div>
+<div class="section" id="metodos">
+<h2>Métodos<a class="headerlink" href="#metodos" title="Link permanente para este título">¶</a></h2>
+<dl class="docutils">
+<dt>statusOn( <code class="docutils literal"><span class="pre">Carbon</span> <span class="pre">$date</span></code> )</dt>
+<dd><p class="first">Retorna um objeto <code class="docutils literal"><span class="pre">Status</span></code> representando o status do auditório na data <code class="docutils literal"><span class="pre">$date</span></code>.</p>
+<p class="last">Ver: <a class="reference internal" href="../helpers/status.html"><span class="doc">Status</span></a>.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="views">
+<h2>Views<a class="headerlink" href="#views" title="Link permanente para este título">¶</a></h2>
+<dl class="docutils">
+<dt>index</dt>
+<dd><p class="first">View onde são exibidos todos os auditórios e seus status para determinado dia.</p>
+<p class="last">Recebe como parâmetro GET opcional uma <code class="docutils literal"><span class="pre">data</span></code>; caso nenhuma seja fornecida, utiliza
+a data atual. Também recebe os parâmetros <code class="docutils literal"><span class="pre">previous</span></code> e <code class="docutils literal"><span class="pre">next</span></code>, que implementam
+a funcionalidade das setas.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="request.html" class="btn btn-neutral float-right" title="Request" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../models.html" class="btn btn-neutral" title="Models" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Evandro Murilo, Valdeir Cesconeto.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

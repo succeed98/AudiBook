@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+background-color: #fff;
+}
+
+label, p, span, .organizador{
+  color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+.btn-pedidos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.title-event{
+  padding-top: 10px;
+  color: #000;
+}
+.organizador:hover{
+  text-decoration: none;
+  color: #000;
+}
+.well {
+  margin-top: 80px;
+  border: 2px solid #d3e0e9;
+}
+.text-center {
+  margin-top: 0;
+}
+.btn-cancelar{
+  background-color: red;
+  color: #fff;
+}
+.btn-cancelar:hover{
+  text-decoration: none;
+  color: #fff;
+}
+.status{
+  margin-bottom: 5px;
+}
+.disponivel, .pendente, .indisponivel {
+  display: inline-block;
+  color: #fff;
+  padding-right: 5px;
+  border-radius: 7%;
+  padding-left: 5px;
+}

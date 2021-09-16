@@ -1,0 +1,102 @@
+/*well principal*/
+.fa-caret-down, .fa-caret-up{
+  padding: 0;
+  color: black;
+  font-size: 20px;
+}
+.icone-down{
+  margin-top: -5px;
+}
+.well-principal{
+  height: 50px;
+  margin-bottom: 3px;
+}
+.text-information{
+  color: red;
+  font-size: 16px;
+}
+.aud-name{
+  padding: 0;
+  color: black;
+  margin-top: -8px;
+  font-size: 20px;
+}
+
+.progress{
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.status-periodo{
+  margin-bottom: 0px;
+  padding: 0px;
+  color: black;
+
+}
+.espaco{
+  height: 5px;
+}
+
+/*end well pricipal*/
+
+/*well secundario*/
+.well-collapse{
+  height: 345px;
+}
+
+.status-color-green{
+  font-size: 30px;
+  margin-left: -12px;
+  margin-top: 3px;
+  color: green;
+}
+.status-color-orange{
+font-size: 30px;
+  margin-left: -12px;
+  margin-top: 3px;
+  color: orange;
+}
+.status-color-red{
+  font-size: 30px;
+  margin-left: -12px;
+  margin-top: 3px;
+  color: red;
+
+}
+.hour-secundario{
+  padding: 0px;
+}
+
+/*.hour-secundario:hover{
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px black, 2px 2px 2px #ccc;
+}*/
+.horas{
+  color: black;
+  position: relative;
+  top: 5px;
+  font-family: 'Lora', serif;
+  font-size: 16px;
+}
+.indisponivel-pendente-btn{
+  position: relative;
+  top: 6px;
+  color: #000;
+  white-space: nowrap;
+  width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.disponivel-btn{
+  border: 1px solid transparent;
+  border-radius: 8%;
+  background-color: green;
+  color: #fff;
+  position: relative;
+  top: 6px;
+
+}
+.capacidade{
+  color: black;
+  margin-top: 10px;
+}

@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+}
+
+/*pessoas relacionadas*/
+
+.well-pessoa {
+  margin-top: 25px;
+  background-color: #fff;
+}
+
+.user-relacionado {
+  margin: 10px 0px 10px 0px;
+  color: #000;
+}
+
+/*chat*/
+
+.altura-title {
+  margin-top: 25px;
+  font-size: 25px;
+  color: #000;
+}
+
+
+.well-chat {
+  margin-top: 30px;
+  height: 400px;
+  overflow: auto;
+  overflow-x: hidden;
+  background-color: #DCDCDC;
+}
+
+.well-input{
+  margin-top: -20px;
+  height: 45px;
+  background-color: #DCDCDC;
+}
+.input-group{
+margin-top: -19px;
+}
+
+/*assunto*/
+
+.well-assunto {
+  margin-top: 25px;
+  height: 500px;
+  overflow: auto;
+  overflow-x: hidden;
+  background-color: #fff;
+  color: #000;
+}
+
+.user-assunto {
+  margin: 10px 0px 10px 0px;
+  font-size: 25px;
+}
+
+
+.text-assunto:link, .text-assunto, .text-assunto:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.uni {
+  white-space: nowrap;
+  width: 170px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.trash-assunto {
+  float: right;
+  color: #000;
+  padding-top: 3px;
+}
+
+.trash-assunto:hover {
+  color: red;
+}
+
+#teste {
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+
+.well-pessoa {
+  height: 500px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+
+/*Small*/
+
+@media screen and (max-width: 767px) {
+  .well-perfil {
+    border-radius: 7%;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 12px;
+  }
+  .well-pessoa {
+    background-color: #fff;
+  }
+  .btn-chamada, .btn-chamada:hover, .btn-chamada:link {
+    background-color: green;
+    color: #fff;
+  }
+  .btn-chamada{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .fa-comments-o{
+    padding-left: 5px;
+  }
+}
+
+/*Tablet*/
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .well-perfil {
+    border-radius: 7%;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 12px;
+  }
+  .well-pessoa {
+    background-color: #fff;
+  }
+  .btn-chamada, .btn-chamada:hover, .btn-chamada:link {
+    background-color: green;
+    color: #fff;
+  }
+  .btn-chamada{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .fa-comments-o{
+    padding-left: 5px;
+  }
+}
+
+/*Computer*/
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  /*pessoas relacionadas*/
+  .well-perfil {
+    border-radius: 7%;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 12px;
+  }
+  .well-pessoa {
+    background-color: #fff;
+  }
+  .btn-chamada, .btn-chamada:hover, .btn-chamada:link {
+    background-color: green;
+    color: #fff;
+  }
+  .btn-chamada{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .fa-comments-o{
+    padding-left: 5px;
+  }
+}
+
+/* > Computer*/
+
+@media screen and (min-width: 1200px) {
+  /*pessoas relacionadas*/
+  .well-perfil {
+    border-radius: 7%;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 12px;
+  }
+  .well-pessoa {
+    background-color: #fff;
+  }
+  .btn-chamada, .btn-chamada:hover, .btn-chamada:link {
+    background-color: green;
+    color: #fff;
+  }
+  .btn-chamada{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .fa-comments-o{
+    padding-left: 5px;
+  }
+}
