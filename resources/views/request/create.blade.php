@@ -7,13 +7,13 @@
 
     <div class="container">
         <div class="row">
-            <h1 class="text-center title-agenda">Agendar {{ $aud->name }}</h1>
+            <h1 class="text-center title-agenda">To schedule {{ $aud->name }}</h1>
         </div>
 
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Descrição do Agendamento
+                    <div class="panel-heading">Schedule Description
                         <span class="date-top">Data: {{ $date->format('d/m/Y') }} </span>
                     </div>
 
@@ -34,7 +34,7 @@
 
                         <div class="form-group{{ $errors->has('event') ? ' has-error' : '' }}
                             space-top">
-                            <label class="col-sm-2 col-md-2 col-lg-2 control-label">Evento</label>
+                            <label class="col-sm-2 col-md-2 col-lg-2 control-label">Event</label>
                             <div class="col-sm-9 col-md-9 col-lg-9">
                                 <input type="text"
                                        name="event"
@@ -55,7 +55,7 @@
                             $errors->has('description') ? ' has-error' : ''
                         }}">
                             <label class="col-sm-2 col-md-2 col-lg-2 control-label">
-                                Descrição
+                                Description
                             </label>
                             <div class="col-sm-9 col-md-9 col-lg-9">
                                 <input type="text"
@@ -74,7 +74,7 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('period') ? ' has-error' : '' }}">
-                            <label class="col-sm-2 col-md-2 col-lg-2 control-label">Período</label>
+                            <label class="col-sm-2 col-md-2 col-lg-2 control-label">Time course</label>
                             <div class="col-sm-5 col-md-5 col-lg-5">
                                 <select name="beginning"
                                         class="btn btn-default dropdown-toggle"
@@ -115,7 +115,7 @@
 
                         <div class="form-group{{ $errors->has('claimant') ? ' has-error' : '' }}">
                             <label class="col-sm-2 col-md-2 col-lg-2 control-label">
-                                Requerente
+                                Applicant
                             </label>
                             <div class="col-sm-9 col-md-9 col-lg-9">
                                 <input type="text"
@@ -136,7 +136,7 @@
                         @if ($aud->name != 'Auditório A')
                             <div class="form-group">
                                 <label class="col-sm-2 col-md-2 col-lg-2 control-label">
-                                    Requisitos
+                                    Requirements
                                 </label>
 
                                 <div class="checkbox-inline col-sm-9 col-md-9 col-lg-9">
@@ -156,10 +156,10 @@
                             <div class="form-group">
                                 <div class="col-sm-2 col-md-2 col-lg-2"></div>
                                 <div class="col-sm-9 col-md-9 col-lg-9">
-                                    <strong>Detalhes para o
-                                        agendamento do Auditório A, como serviços e equipamentos,
-                                        devem ser discutidos através do email
-                                        acs.jiparana@ulbra.br</strong>
+                                    <strong>Details for the
+                                        scheduling of Auditorium A, such as services and equipment,
+                                        must be discussed via email.
+                                        emuhiydeen6@gmail.com</strong>
                                 </div>
                             </div>
                         @endif

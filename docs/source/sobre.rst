@@ -1,5 +1,5 @@
-Sobre
+About
 =====
 
-Auditorium é um sistema de agendamento de auditórios feito sob demanda para o CEULJI/ULBRA, como trabalho final
-da disciplina de Tópicos Especiais III (frameworks) ministrada pelo professor Edgar Kaiser.
+Auditorium is an on-demand auditorium scheduling system for Koforidua Technical University, as final project work
+of the Special Topics III course (frameworks) taught by Professor Edgar Kaiser.

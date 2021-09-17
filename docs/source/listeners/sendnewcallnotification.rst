@@ -1,6 +1,6 @@
 SendNewCallNotification
-=======================
+======================
 
-``SendNewCallNotification`` é um listener que ouve eventos do tipo
-``CallCreated`` e envia uma notificação do tipo ``NewCall`` para todos
-os envolvidos.
+``SendNewCallNotification`` is a listener that listens for events of type
+``CallCreated`` and sends a ``NewCall`` notification to everyone
+involved.

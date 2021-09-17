@@ -1,41 +1,41 @@
-Auditorium
+auditorium
 ==========
 
-``Auditorium`` é o model que representa um auditório. Sua tabela correspondente
-no banco de dados se chama ``auditoria``.
+``Auditorium`` is the model that represents an auditorium. Your corresponding table
+in the database it is called ``audit``.
 
-Atributos
+attributes
 ---------
 
 name ``VARCHAR(20)``
-  Nome do auditório
+   Auditorium name
 
 capacity ``INTEGER``
-  Quantas pessoas o auditório comporta.
+   How many people can the auditorium hold.
 
 accessible ``BOOLEAN``
-  Se o auditório preenche os requisitos de acessibilidade.
+   Whether the auditorium meets the accessibility requirements.
 
 location ``VARCHAR(100)``
-  Localização do auditório.
+   Location of the auditorium.
 
 obs ``TEXT``
-  Observações adicionais sobre o auditório.
+   Additional remarks about the auditorium.
 
-Métodos
+Methods
 -------
 
 statusOn( ``Carbon $date`` )
-  Retorna um objeto ``Status`` representando o status do auditório na data ``$date``.
+   Returns a ``Status`` object representing the status of the audience on date ``$date``.
 
-  Ver: :doc:`/helpers/status`.
+   See: :doc:`/helpers/status`.
 
 Views
 -----
 
 index
-  View onde são exibidos todos os auditórios e seus status para determinado dia.
+   View where all auditoriums and their status for a given day are displayed.
 
-  Recebe como parâmetro GET opcional uma ``data``; caso nenhuma seja fornecida, utiliza
-  a data atual. Também recebe os parâmetros ``previous`` e ``next``, que implementam
-  a funcionalidade das setas.
+   Receives as an optional GET parameter a ``data``; if none is provided, use
+   the current date. It also receives the ``previous`` and ``next`` parameters, which implement
+   the functionality of the arrows.

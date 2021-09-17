@@ -47,9 +47,9 @@
     <div class="col-md-4 col-lg-4 control-label">
         @if ($status == 1)
             @if ($canRequest)
-                <p class="text-center disponivel-btn">Disponível</p>
+                <p class="text-center disponivel-btn">Available</p>
             @else
-                <p class="text-center disponivel-btn">Bloqueado</p>
+                <p class="text-center disponivel-btn">Locked</p>
             @endif
         @else
             <p class="indisponivel-pendente-btn"

@@ -76,7 +76,7 @@ class RequestController extends Controller
             }
 
             return $view
-                ->withErrors(['date' => 'A data requisitada estava bloqueada!'])
+                ->withErrors(['date' => 'The requested date was blocked!'])
                 ->with('date', $date);
         }
 
@@ -94,11 +94,11 @@ class RequestController extends Controller
             'description' => 'required|string|max:500',
             'claimant' => 'max:20',
         ], [
-            'event.required' => 'O campo evento é obrigatório.',
-            'event.max' => 'O campo evento deve ter até 50 caracteres.',
-            'description.required' => 'O campo descrição é obrigatório.',
-            'description.max' => 'O campo descrição deve ter até 500 caracteres.',
-            'claimant.max' => 'O campo requerente deve ter até 30 caracteres.',
+            'event.required' => 'The event field is required.',
+            'event.max' => 'The event field must be up to 50 characters long.',
+            'description.required' => 'The description field is required.',
+            'description.max' => 'The description field must be up to 500 characters long.',
+            'claimant.max' => 'The claimant field must be up to 30 characters long.',
         ]);
 
         // validates for date
@@ -106,7 +106,7 @@ class RequestController extends Controller
 
         if (!\App\Helpers\DateHelper::canRequest($date)) {
             throw ValidationException::withMessages([
-                "date" => ['Data estava bloqueada!'],
+                "date" => ['Data was blocked!'],
             ]);
         }
 
@@ -116,7 +116,7 @@ class RequestController extends Controller
 
         if (strtotime($beginning->beginning) > strtotime($end->beginning)) {
             throw ValidationException::withMessages([
-                "period" => ['Ordem inválida!'],
+                "period" => ['Invalid order!'],
             ]);
         }
 
@@ -128,7 +128,7 @@ class RequestController extends Controller
         foreach ($periods as $period) {
             if (!$audit->freeOn($date, $period)) {
                 throw ValidationException::withMessages([
-                    "period" => ['Auditório indisponível!'],
+                    "period" => ['Auditorium Unavailble!'],
                 ]);
             }
         }

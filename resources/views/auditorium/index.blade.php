@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Auditórios')
+@section('title', 'Auditoriums')
 
 @section('content')
     <div class="container">
@@ -91,13 +91,13 @@
 
                     <div class="row status-periodo">
                         <div class="col-md-3 col-lg-3">
-                            <p class="text-center">Manhã</p>
+                            <p class="text-center">Morning</p>
                         </div>
                         <div class="col-md-6 col-lg-6">
-                            <p class="text-center">Tarde</p>
+                            <p class="text-center">Afternoon</p>
                         </div>
                         <div class="col-md-3 col-lg-3">
-                            <p class="text-center">Noite</p>
+                            <p class="text-center">Evening</p>
                         </div>
                     </div>
 
@@ -152,20 +152,20 @@
             <div class="row">
                 <div class="col-md-4 col-lg-4 text-center evandro-footer">
                     <strong>Dev</strong>Back-end:
-                    <a href="https://github.com/evandromurilo" target="_blank">Evandro Murilo</a>
+                    <a href="https://github.com/Fourteen98" target="_blank">Muhyideen Elias Issah</a>
                     <div class="icon-footer">
                         <i class="fa fa-github" aria-hidden="true"></i>
                     </div>
                 </div>
 
                 <div class="col-md-4 col-lg-4 logo-footer">
-                    <img src="../img/logo.png" alt="ulbra"></img>
+                    <img src="../img/logo.jpeg" alt="ulbra"></img>
                 </div>
 
                 <div class="col-md-4 col-lg-4 text-center valdeir-footer">
                     <strong>Dev</strong>Front-end:
-                    <a href="https://github.com/valdeircesconeto"
-                       target="_blank">Valdeir Cesconeto</a>
+                    <a href="https://github.com/Bernarddormon"
+                       target="_blank">Bernard Dormon</a>
                     <div class="icon-footer">
                         <i class="fa fa-github" aria-hidden="true"></i>
                     </div>

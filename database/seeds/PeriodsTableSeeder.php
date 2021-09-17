@@ -15,7 +15,7 @@ class PeriodsTableSeeder extends Seeder
         DB::table('periods')->insert([
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
-            'name' => 'Manhã 1',
+            'name' => 'Morning 1',
             'beginning' => '07:00',
             'end' => '09:30',
         ]);
@@ -23,7 +23,7 @@ class PeriodsTableSeeder extends Seeder
         DB::table('periods')->insert([
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
-            'name' => 'Manhã 2',
+            'name' => 'Morning 2',
             'beginning' => '09:30',
             'end' => '12:00',
         ]);
@@ -31,7 +31,7 @@ class PeriodsTableSeeder extends Seeder
         DB::table('periods')->insert([
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
-            'name' => 'Tarde 1',
+            'name' => 'Afternoon 1',
             'beginning' => '13:00',
             'end' => '15:30',
         ]);
@@ -39,7 +39,7 @@ class PeriodsTableSeeder extends Seeder
         DB::table('periods')->insert([
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
-            'name' => 'Tarde 2',
+            'name' => 'Afternoon 2',
             'beginning' => '15:30',
             'end' => '17:30',
         ]);
@@ -47,7 +47,7 @@ class PeriodsTableSeeder extends Seeder
         DB::table('periods')->insert([
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
-            'name' => 'Intermediário',
+            'name' => 'Intermediary',
             'beginning' => '17:30',
             'end' => '19:00',
         ]);
@@ -55,7 +55,7 @@ class PeriodsTableSeeder extends Seeder
         DB::table('periods')->insert([
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
-            'name' => 'Noite 1',
+            'name' => 'Nigth 1',
             'beginning' => '19:00',
             'end' => '20:30',
         ]);
@@ -63,7 +63,7 @@ class PeriodsTableSeeder extends Seeder
         DB::table('periods')->insert([
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
-            'name' => 'Noite 2',
+            'name' => 'Night 2',
             'beginning' => '20:30',
             'end' => '22:00',
         ]);

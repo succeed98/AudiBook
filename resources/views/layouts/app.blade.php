@@ -53,10 +53,10 @@
                         <ul class="nav navbar-nav">
                             &nbsp;
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('home') }}">Auditórios </a>
+                                <a class="nav-link" href="{{ route('home') }}">Auditoriums </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('users.index') }}">Usuários </a>
+                                <a class="nav-link" href="{{ route('users.index') }}">Users</a>
                             </li>
                         </ul>
 
@@ -90,14 +90,14 @@
                                         </li>
                                     @endcan
                                     <li><a href="{{ route('users.show', Auth::id()) }}">
-                                            Perfil
+                                        Profile
                                             <!--<i style="padding-top:4px;"
                                                 class="fa fa-user-o icon"
                                                 aria-hidden="true"></i>-->
                                     </li></a>
                                     @can('manage', App\BlockedDate::class)
                                         <li><a href="{{ route('blocked-dates.index') }}">
-                                                Bloqueio de Datas
+                                            Date Lock
                                                 <!-- <i style="padding-top:4px;"
                                                     class="fa fa-calendar icon"
                                                     aria-hidden="true"></i>-->
@@ -108,7 +108,7 @@
                                         <a href="{{ route('logout') }}"
                                            onclick="event.preventDefault();
                                            document.getElementById('logout-form').submit();">
-                                            Sair
+                                            Log Out
                                             <!--<i style="padding-top:4px;"
                                                 class="fa fa-sign-in icon"
                                                 aria-hidden="true"></i>-->

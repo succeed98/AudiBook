@@ -1,6 +1,6 @@
 SendNewMessageNotification
 ==========================
 
-``SendNewMessageNotification`` é um listener que ouve eventos do tipo
-``MessageCreated`` e envia uma notificação do tipo ``NewMessage`` para todos
-os envolvidos.
+``SendNewMessageNotification`` is a listener that listens for events of type
+``MessageCreated`` and sends a notification of type ``NewMessage`` to everyone
+involved.

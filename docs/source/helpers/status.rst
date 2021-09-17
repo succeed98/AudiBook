@@ -9,9 +9,9 @@ Atributos
 **morning**, **afternoon** e **night** representam o status do auditório no determinado
 período:
 
-0. pendente
-1. disponível
-2. indisponível
+0. Pending
+1. Available
+2. Unavailable
 
 morning ``Int``
   Representa o status do auditório no período da manhã.

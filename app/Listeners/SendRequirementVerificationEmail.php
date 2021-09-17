@@ -34,7 +34,7 @@ class SendRequirementVerificationEmail implements ShouldQueue
             return;
         }
 
-        $dean_requirement = $event->request->requirements()->where('name', 'Reitor')->first();
+        $dean_requirement = $event->request->requirements()->where('name', 'Dean')->first();
 
         if (!is_null($dean_requirement) &&
             is_null(RequirementVerification::where('requirement_id', $dean_requirement->id)
@@ -43,7 +43,7 @@ class SendRequirementVerificationEmail implements ShouldQueue
                 ->send(new \App\Mail\RequirementVerification($dean_requirement));
         }
 
-        $chaplain_requirement = $event->request->requirements()->where('name', 'Capelão')->first();
+        $chaplain_requirement = $event->request->requirements()->where('name', 'Dean')->first();
 
         if (!is_null($chaplain_requirement) &&
             is_null(RequirementVerification::where('requirement_id', $chaplain_requirement->id)

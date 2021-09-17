@@ -16,4 +16,4 @@ Auditorium
   events
   listeners
   notifications
-  outros
+  Others

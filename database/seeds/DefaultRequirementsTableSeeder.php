@@ -15,13 +15,13 @@ class DefaultRequirementsTableSeeder extends Seeder
         DB::table('default_requirements')->insert([
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
-            'name' => 'Reitor',
+            'name' => 'Dean',
         ]);
 
         DB::table('default_requirements')->insert([
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
-            'name' => 'Capelão',
+            'name' => 'Dean',
         ]);
 
         DB::table('default_requirements')->insert([
@@ -33,7 +33,7 @@ class DefaultRequirementsTableSeeder extends Seeder
         DB::table('default_requirements')->insert([
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
-            'name' => 'Computador',
+            'name' => 'Computer',
         ]);
 
         DB::table('default_requirements')->insert([

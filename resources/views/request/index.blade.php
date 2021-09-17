@@ -5,7 +5,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <h1 class="text-center title-pedido">Pedidos</h1>
+            <h1 class="text-center title-pedido">Requests</h1>
             <nav class="navbar navbar-default sub-menu" role="navigation">
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="nav navbar-nav">
@@ -13,7 +13,7 @@
                             <a href="{{ route('requests.index', [
                                 'filter' => 'pending', 'auditorium' => $filter_aud]) }}"
                                class=" {{ $filter == 'pending' ? 'active' : ''}}">
-                               Pendentes
+                               Outstanding
                             </a>
                         </li>
 
@@ -29,7 +29,7 @@
                             <a href="{{ route('requests.index', [
                                 'filter' => 'resolved', 'auditorium' => $filter_aud]) }}"
                                class=" {{ $filter == 'resolved' ? 'active' : '' }}">
-                               Resolvidos
+                               Resolved
                             </a>
                         </li>
 
@@ -37,7 +37,7 @@
                             <a href="{{ route('requests.index', [
                                 'filter' => 'rejected', 'auditorium' => $filter_aud]) }}"
                                class=" {{ $filter == 'rejected' ? 'active' : '' }}">
-                               Rejeitados
+                               Rejected
                             </a>
                         </li>
 
@@ -45,7 +45,7 @@
                             <a href="{{ route('requests.index', [
                                 'filter' => 'accepted', 'auditorium' => $filter_aud]) }}"
                                class=" {{ $filter == 'accepted' ? 'active' : '' }}">
-                               Aceitos
+                               Accepted
                             </a>
                         </li>
                     </ul>
@@ -53,7 +53,7 @@
                     <span style="height: 50px; padding: 6px 10px" class="pull-right">
                         <select class="form-control">
                             <option value="{{ route('requests.index', ['filter' => $filter]) }}">
-                                Todos os auditórios</option>
+                                All auditoriums</option>
                             @foreach ($auditoria as $aud)
                                 <option value="{{ route('requests.index', [
                                     'filter' => $filter,

@@ -1,9 +1,9 @@
-Outros
+Others
 ======
 
 .. toctree::
    :maxdepth: 2
-   :caption: Outros:
+   :caption: Others:
 
-   outros/sistemadenotificações
-   outros/sistemadechamadas
+   Others/sistemadenotificações
+   Others/sistemadechamadas

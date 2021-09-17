@@ -6,7 +6,7 @@
          data-toggle="tooltip"
          data-placement="top"
          title="Pendente">
-        <span class="sr-only">Pendente para a {{ $period->name }}.</span>
+        <span class="sr-only">Pending at {{ $period->name }}.</span>
     </div>
 
 @elseif ($status == 1)
@@ -15,16 +15,16 @@
              style="width: 14.286%; background-color: green;"
              data-toggle="tooltip"
              data-placement="top"
-             title="Disponível">
-            <span class="sr-only">Disponível para a {{ $period->name }}.</span>
+             title="Available">
+            <span class="sr-only">Available at {{ $period->name }}.</span>
         </div>
     @else
         <div class="progress-bar"
              style="width: 14.286%; background-color: green;"
              data-toggle="tooltip"
              data-placement="top"
-             title="Bloqueado">
-            <span class="sr-only">Bloqueado para a {{ $period->name }}.</span>
+             title="Locked">
+            <span class="sr-only">Locked at {{ $period->name }}.</span>
         </div>
     @endif
 
@@ -33,7 +33,7 @@
          style="width: 14.286%; background-color: red;"
          data-toggle="tooltip"
          data-placement="top"
-         title="Indisponível">
-        <span class="sr-only">Indisponível para a {{ $period->name }}.</span>
+         title="Unavailable">
+        <span class="sr-only">Unavailable at {{ $period->name }}.</span>
     </div>
 @endif

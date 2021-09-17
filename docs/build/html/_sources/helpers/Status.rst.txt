@@ -1,50 +1,50 @@
 Status
 ======
 
-A classe ``Status`` representa o status de um auditório em uma data específica.
+The ``Status`` class represents the status of an audience on a specific date.
 
-Atributos
+Attributes
 ---------
 
-**morning**, **afternoon** e **night** representam o status do auditório no determinado
-período:
+**morning**, **afternoon** e **night** represent the status of the audience in the given
+time course:
 
-0. pendente
-1. disponível
-2. indisponível
+0. Pending
+1. Available
+2. Unavailable
 
 morning ``Int``
-  Representa o status do auditório no período da manhã.
+   Represents the status of the auditorium in the morning.
 
 afternoon ``Int``
-  Representa o status do auditório no período da tarde.
+   Represents the status of the auditorium in the afternoon.
 
 night ``Int``
-  Representa o status do auditório no período da noite.
+   Represents the status of the auditorium at night time.
 
 date ``Carbon``
-  A data do ``Status`` em questão.
+   The date of the ``Status`` in question.
 
 requests ``Collection``
-  Uma ``Collection`` contendo todas as ``Requests`` existentes para o auditório
-  em questão.
+   A ``Collection`` containing all existing ``Requests`` for the auditorium
+   in question.
 
 morning_requests ``Collection``
-  Uma ``Collection`` contendo todas as ``Requests`` existentes para o auditório
-  em questão no período da manhã.
+   A ``Collection`` containing all existing ``Requests`` for the auditorium
+   in question in the morning.
 
 afternoon_requests ``Collection``
-  Uma ``Collection`` contendo todas as ``Requests`` existentes para o auditório
-  em questão no período da tarde.
+   A ``Collection`` containing all existing ``Requests`` for the auditorium
+   in question in the afternoon.
 
 night_requests ``Collection``
-  Uma ``Collection`` contendo todas as ``Requests`` existentes para o auditório
-  em questão no período da noite.
+   A ``Collection`` containing all existing ``Requests`` for the auditorium
+   in question at night time.
 
-Exemplo
+Example
 -------
 ::
 
-  // retorna o código de status do auditório no período da noite de hoje
-  $auditorium->statusOn(Carbon::now())->night
+   // returns the status code of the auditorium for tonight's period
+   $auditorium->statusOn(Carbon::now())->night
 

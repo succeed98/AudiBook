@@ -1,6 +1,6 @@
 AssignNewUserToChat
-===================
+==================
 
-``AssignNewUserToChat`` é um listener que ouve eventos do tipo
-``UserRegistered`` e adiciona uma permissão para que ele participe
-do chat universal.
+``AssignNewUserToChat`` is a listener that listens for events of type
+``UserRegistered`` and adds a permission for him to participate
+of the universal chat.

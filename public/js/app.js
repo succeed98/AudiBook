@@ -47116,7 +47116,7 @@ var render = function() {
         }
       },
       [
-        _vm._v("\n\t\tNotificações "),
+        _vm._v("\n\t\tNotifications"),
         _c("span", { staticClass: "badge" }, [
           _vm._v(_vm._s(_vm.unreadNotifications.length))
         ])

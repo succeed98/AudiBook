@@ -1,6 +1,6 @@
 SendNewRequestNotification
 ==========================
 
-``SendNewRequestNotification`` é um listener que ouve eventos do tipo
-``RequestCreated`` e envia uma notificação do tipo ``NewRequest`` para os
-usuários que tem permissão de secretário.
+``SendNewRequestNotification`` is a listener that listens for events of type
+``RequestCreated`` and sends a ``NewRequest`` notification to the
+users who have secretary permission.
