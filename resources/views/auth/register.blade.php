@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Cria Usuário</div>
+                    <div class="panel-heading">Create User</div>
 
                     <div class="panel-body">
                         <form class="form-horizontal"
@@ -14,7 +14,7 @@
                             {{ csrf_field() }}
 
                             <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                                <label for="name" class="col-md-4 control-label">Nome</label>
+                                <label for="name" class="col-md-4 control-label">Name</label>
 
                                 <div class="col-md-6">
                                     <input id="name"
@@ -55,7 +55,7 @@
                             <div class="form-group{{
                                 $errors->has('password') ? ' has-error' : ''
                             }}">
-                                <label for="password" class="col-md-4 control-label">Senha</label>
+                                <label for="password" class="col-md-4 control-label">Password</label>
 
                                 <div class="col-md-6">
                                     <input id="password"
@@ -75,7 +75,7 @@
                             <div class="form-group">
                                 <label for="password-confirm"
                                        class="col-md-4 control-label">
-                                    Confirme a Senha
+                                    Confirm the Password
                                 </label>
 
                                 <div class="col-md-6">
@@ -88,7 +88,7 @@
                             </div>
 
                             <div class="form-group{{ $errors->has('color') ? ' has-error' : '' }}">
-                                <label for="color" class="col-md-4 control-label">Cor</label>
+                                <label for="color" class="col-md-4 control-label">Color</label>
 
                                 <div class="col-md-3">
                                     <input id="color"
@@ -105,12 +105,12 @@
                                     @endif
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="circle" id="cor"></div>
+                                    <div class="circle" id="Color"></div>
                                 </div>
                             </div>
 
                             <div class="form-group{{ $errors->has('cel') ? ' has-error' : '' }}">
-                                <label for="cel" class="col-md-4 control-label">Celular</label>
+                                <label for="cel" class="col-md-4 control-label">Phone Number</label>
 
                                 <div class="col-md-6">
                                     <input id="cel"
@@ -133,7 +133,7 @@
                             }}">
                                 <label for="description"
                                        class="col-md-4 control-label">
-                                    Cargo
+                                    Office
                                 </label>
 
                                 <div class="col-md-6">
@@ -154,7 +154,7 @@
                             <div class="form-group">
                                 <div class="col-md-6 col-md-offset-4">
                                     <button type="submit" class="btn btn-primary">
-                                        Cadastrar-se
+                                        Register
                                     </button>
                                 </div>
                             </div>

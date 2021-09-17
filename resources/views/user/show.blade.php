@@ -14,7 +14,7 @@
 
                 @if (Auth::user()->isAn('admin') || $user->id == Auth::id())
                     <a href="{{ route('users.edit', $user->id) }}">
-                        <button type="button" class="btn">Editar Perfil
+                        <button type="button" class="btn">Edit profile
                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                         </button>
                     </a>
@@ -34,12 +34,12 @@
             </div>
 
             <div class="col-md-8 col-lg-8">
-                <h2 class="text-center historico">Histórico de Agendamentos</h2>
+                <h2 class="text-center historico">Scheduling History</h2>
             </div>
 
             @if ($requests->isEmpty())
                 <div  id="texto" class="nenhum-historico text-center">
-                    <span>Nenhum agendamento feito.</span>
+                    <span>No scheduling done.</span>
                 </div>
             @else
                 <div class="container">

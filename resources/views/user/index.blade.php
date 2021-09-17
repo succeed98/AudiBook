@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'Usuários')
+@section('title', 'Users')
 
 @section('content')
     <div class="container">
         <div class="row">
-            <h1 class="text-left title-user">Usuários</h1>
+            <h1 class="text-left title-user">Users</h1>
         </div>
     </div>
     <div class="container">
@@ -25,7 +25,7 @@
                         @endif
 
                         <div class="row">
-                            <label class="col-md-2 control-label">Cargo: </label>
+                            <label class="col-md-2 control-label">Office: </label>
                             <span class="col-md-10">{{ $user->description}}</span>
                         </div>
                     </div>

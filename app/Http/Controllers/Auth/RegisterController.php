@@ -73,13 +73,13 @@ class RegisterController extends Controller
                         ],
             'password' => 'required|string|min:6|confirmed',
                     ], [
-                        'name.required' => 'O campo nome é obrigatório.',
+                        'name.required' => 'O campo Name é obrigatório.',
                         'email.required' => 'O campo email é obrigatório.',
-                        'name.max' => 'O campo nome deve ter até 255 caracteres.',
-                        'color.required' => 'O campo cor é obrigatório.',
-                        'color.regex' => 'Formato inválido no campo cor.',
-                        'password.required' => 'O campo senha é obrigatório.',
-            'password.min' => 'O campo senha deve ter pelo menos 6 caracteres.',
+                        'name.max' => 'O campo Name deve ter até 255 caracteres.',
+                        'color.required' => 'O campo Color é obrigatório.',
+                        'color.regex' => 'Formato inválido no campo Color.',
+                        'password.required' => 'O campo Password é obrigatório.',
+            'password.min' => 'O campo Password deve ter pelo menos 6 caracteres.',
             'password.confirmed' => 'A confirmação não bate.',
                     ]);
     }

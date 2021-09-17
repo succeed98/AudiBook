@@ -1,10 +1,10 @@
-//     Underscore.js 1.3.1
+//     UndersColore.js 1.3.1
 //     (c) 2009-2012 Jeremy Ashkenas, DocumentCloud Inc.
-//     Underscore is freely distributable under the MIT license.
-//     Portions of Underscore are inspired or borrowed from Prototype,
+//     UndersColore is freely distributable under the MIT license.
+//     Portions of UndersColore are inspired or borrowed from Prototype,
 //     Oliver Steele's Functional, and John Resig's Micro-Templating.
 //     For all details and documentation:
-//     http://documentcloud.github.com/underscore
+//     http://documentcloud.github.com/undersColore
 
 (function() {
 
@@ -15,7 +15,7 @@
   var root = this;
 
   // Save the previous value of the `_` variable.
-  var previousUnderscore = root._;
+  var previousUndersColore = root._;
 
   // Establish the object that gets returned to break out of a loop iteration.
   var breaker = {};
@@ -23,7 +23,7 @@
   // Save bytes in the minified (but not gzipped) version:
   var ArrayProto = Array.prototype, ObjProto = Object.prototype, FuncProto = Function.prototype;
 
-  // Create quick reference variables for speed access to core prototypes.
+  // Create quick reference variables for speed access to Colore prototypes.
   var slice            = ArrayProto.slice,
       unshift          = ArrayProto.unshift,
       toString         = ObjProto.toString,
@@ -45,10 +45,10 @@
     nativeKeys         = Object.keys,
     nativeBind         = FuncProto.bind;
 
-  // Create a safe reference to the Underscore object for use below.
+  // Create a safe reference to the UndersColore object for use below.
   var _ = function(obj) { return new wrapper(obj); };
 
-  // Export the Underscore object for **Node.js**, with
+  // Export the UndersColore object for **Node.js**, with
   // backwards-compatibility for the old `require()` API. If we're in
   // the browser, add `_` as a global object via a string identifier,
   // for Closure Compiler "advanced" mode.
@@ -67,7 +67,7 @@
   // Collection Functions
   // --------------------
 
-  // The cornerstone, an `each` implementation, aka `forEach`.
+  // The Colornerstone, an `each` implementation, aka `forEach`.
   // Handles objects with the built-in `forEach`, arrays, and raw objects.
   // Delegates to **ECMAScript 5**'s native `forEach` if available.
   var each = _.each = _.forEach = function(obj, iterator, context) {
@@ -684,7 +684,7 @@
     switch (className) {
       // Strings, numbers, dates, and booleans are compared by value.
       case '[object String]':
-        // Primitives and their corresponding object wrappers are equivalent; thus, `"5"` is
+        // Primitives and their Colorresponding object wrappers are equivalent; thus, `"5"` is
         // equivalent to `new String("5")`.
         return a == String(b);
       case '[object Number]':
@@ -846,10 +846,10 @@
   // Utility Functions
   // -----------------
 
-  // Run Underscore.js in *noConflict* mode, returning the `_` variable to its
-  // previous owner. Returns a reference to the Underscore object.
+  // Run UndersColore.js in *noConflict* mode, returning the `_` variable to its
+  // previous owner. Returns a reference to the UndersColore object.
   _.noConflict = function() {
-    root._ = previousUnderscore;
+    root._ = previousUndersColore;
     return this;
   };
 
@@ -868,8 +868,8 @@
     return (''+string).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;').replace(/\//g,'&#x2F;');
   };
 
-  // Add your own custom functions to the Underscore object, ensuring that
-  // they're correctly added to the OOP wrapper as well.
+  // Add your own custom functions to the UndersColore object, ensuring that
+  // they're Colorrectly added to the OOP wrapper as well.
   _.mixin = function(obj) {
     each(_.functions(obj), function(name){
       addToWrapper(name, _[name] = obj[name]);
@@ -884,7 +884,7 @@
     return prefix ? prefix + id : id;
   };
 
-  // By default, Underscore uses ERB-style template delimiters, change the
+  // By default, UndersColore uses ERB-style template delimiters, change the
   // following template settings to use alternative delimiters.
   _.templateSettings = {
     evaluate    : /<%([\s\S]+?)%>/g,
@@ -904,8 +904,8 @@
   };
 
   // JavaScript micro-templating, similar to John Resig's implementation.
-  // Underscore templating handles arbitrary delimiters, preserves whitespace,
-  // and correctly escapes quotes within interpolated code.
+  // UndersColore templating handles arbitrary delimiters, preserves whitespace,
+  // and Colorrectly escapes quotes within interpolated code.
   _.template = function(str, data) {
     var c  = _.templateSettings;
     var tmpl = 'var __p=[],print=function(){__p.push.apply(__p,arguments);};' +
@@ -940,9 +940,9 @@
   // The OOP Wrapper
   // ---------------
 
-  // If Underscore is called as a function, it returns a wrapped object that
+  // If UndersColore is called as a function, it returns a wrapped object that
   // can be used OO-style. This wrapper holds altered versions of all the
-  // underscore functions. Wrapped objects may be chained.
+  // undersColore functions. Wrapped objects may be chained.
   var wrapper = function(obj) { this._wrapped = obj; };
 
   // Expose `wrapper.prototype` as `_.prototype`
@@ -962,7 +962,7 @@
     };
   };
 
-  // Add all of the Underscore functions to the wrapper object.
+  // Add all of the UndersColore functions to the wrapper object.
   _.mixin(_);
 
   // Add all mutator Array functions to the wrapper.
@@ -985,7 +985,7 @@
     };
   });
 
-  // Start chaining a wrapped Underscore object.
+  // Start chaining a wrapped UndersColore object.
   wrapper.prototype.chain = function() {
     this._chain = true;
     return this;

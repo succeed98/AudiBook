@@ -284,7 +284,7 @@
   }
 
   /**
-   * After adding a new comment, it must be inserted in the correct
+   * After adding a new comment, it must be inserted in the Colorrect
    * location in the comment tree.
    */
   function insertComment(comment) {
@@ -566,7 +566,7 @@
     var context = $.extend({}, opts, comment);
     var div = $(renderTemplate(commentTemplate, context));
 
-    // If the user has voted on this comment, highlight the correct arrow.
+    // If the user has voted on this comment, highlight the Colorrect arrow.
     if (comment.vote) {
       var direction = (comment.vote == 1) ? 'u' : 'd';
       div.find('#' + direction + 'v' + comment.id).hide();

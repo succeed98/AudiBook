@@ -44,7 +44,7 @@ class RequestResolved extends Notification implements ShouldQueue
         return [
             'request_id' => $this->request->id,
             'auditorium_name' => $this->request->auditorium->name,
-            'n_message' => "Sua requisição do ".$this->request->auditorium->name." mudou de status.",
+            'n_message' => "Your request for the ".$this->request->auditorium->name." changed status.",
             'n_url' => route('requests.show', ['id' => $this->request->id, 'from' => 'notification']),
         ];
     }
@@ -69,10 +69,10 @@ class RequestResolved extends Notification implements ShouldQueue
         );
 
         return (new MailMessage)
-            ->subject('Resolução de pedido')
-            ->greeting('Olá!')
-            ->line('Um de seus pedidos ('.$this->request->event.') mudou de status.')
-            ->action('Ver pedido', $url)
-            ->line('Obrigado por utilizar nosso sistema!');
+            ->subject('Order resolution')
+            ->greeting('Hello!')
+            ->line('One of your orders ('.$this->request->event.') changed status.')
+            ->action('See order', $url)
+            ->line('Thank you for using our system!');
     }
 }

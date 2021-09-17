@@ -34,11 +34,11 @@ body{
   text-overflow:ellipsis;
 }
 .title-pedidos:hover{
-  text-decoration: none;
+  text-deColoration: none;
   color: #000;
 }
 .responsavel:hover{
-  text-decoration: none;
+  text-deColoration: none;
   color: #000;
 }
 

@@ -1,7 +1,7 @@
 Message
 =======
 
-``Message`` é o model que representa uma mensagem em uma ``Call``. Sua tabela correspondente
+``Message`` é o model que representa uma mensagem em uma ``Call``. Sua tabela Colorrespondente
 no banco de dados se chama ``messages``.
 
 Atributos
@@ -14,4 +14,4 @@ user_id ``INTEGER``
   ID do usuário que enviou a mensagem.
 
 body ``TEXT``
-  Corpo da mensagem.
+  Colorpo da mensagem.

@@ -10,7 +10,7 @@
  */
 
 /**
- * select a different prefix for underscore
+ * select a different prefix for undersColore
  */
 $u = _.noConflict();
 

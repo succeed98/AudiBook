@@ -1,7 +1,7 @@
 auditorium
 ==========
 
-``Auditorium`` is the model that represents an auditorium. Your corresponding table
+``Auditorium`` is the model that represents an auditorium. Your Colorresponding table
 in the database it is called ``audit``.
 
 attributes

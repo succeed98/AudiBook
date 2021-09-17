@@ -4,7 +4,7 @@ jQuery(function($){
 
 function updateColor() {
   var content = $('#color').val();
-  $('#cor').css('background-color', content);
+  $('#Color').css('background-color', content);
 }
 
 jQuery(function($) {
@@ -15,7 +15,7 @@ $("body").on('input', '#color', function() {
 	updateColor();
 });
 
-$("body").on('click', '#cor', function() {
+$("body").on('click', '#Color', function() {
   $("#color").val(randomColor());
 	updateColor();
 });

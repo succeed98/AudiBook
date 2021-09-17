@@ -2,7 +2,7 @@ Request
 =======
 
 ``Request`` is the model that represents an audience scheduling request.
-Its corresponding table in the database is called ``requests``.
+Its Colorresponding table in the database is called ``requests``.
 
 attributes
 ---------

@@ -123,7 +123,7 @@ div.relations {
 
 div.sphinxsidebar a {
     color: #444;
-    text-decoration: none;
+    text-deColoration: none;
     border-bottom: 1px dotted #999;
 }
 
@@ -222,12 +222,12 @@ div.sphinxsidebar hr {
 
 a {
     color: #004B6B;
-    text-decoration: underline;
+    text-deColoration: underline;
 }
 
 a:hover {
     color: #6D4100;
-    text-decoration: underline;
+    text-deColoration: underline;
 }
 
 div.body h1,
@@ -252,7 +252,7 @@ div.body h6 { font-size: 100%; }
 a.headerlink {
     color: #DDD;
     padding: 0 4px;
-    text-decoration: none;
+    text-deColoration: none;
 }
 
 a.headerlink:hover {
@@ -505,7 +505,7 @@ tt.xref, code.xref, a tt {
 }
 
 a.reference {
-    text-decoration: none;
+    text-deColoration: none;
     border-bottom: 1px dotted #004B6B;
 }
 
@@ -519,7 +519,7 @@ a.reference:hover {
 }
 
 a.footnote-reference {
-    text-decoration: none;
+    text-deColoration: none;
     font-size: 0.7em;
     vertical-align: top;
     border-bottom: 1px dotted #004B6B;

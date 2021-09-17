@@ -65,7 +65,7 @@
                             <!-- Authentication Links -->
                             @guest
                             <li><a href="{{ route('login') }}">Login</a></li>
-                            <li><a href="{{ route('register') }}">Criar Conta</a></li>
+                            <li><a href="{{ route('register') }}">Create an account</a></li>
                         @else
                             <notification  :user_id="{{ Auth::id() }}"></notification>
 
@@ -82,7 +82,7 @@
                                     @can('resolve', App\Request::class)
                                         <li class="dis-inline">
                                             <a href="{{ route('requests.index') }}">
-                                                Pedidos
+                                            requests
                                                 <!--<i style="padding-top:4px;"
                                                     class="fa fa-list icon"
                                                     aria-hidden="true"></i>-->

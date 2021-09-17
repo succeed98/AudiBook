@@ -1,7 +1,7 @@
 Call
 ====
 
-``Call`` é o model que representa uma chamada. Sua tabela correspondente
+``Call`` é o model que representa uma chamada. Sua tabela Colorrespondente
 no banco de dados se chama ``calls``.
 
 Atributos

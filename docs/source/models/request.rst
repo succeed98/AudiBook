@@ -2,7 +2,7 @@ Request
 =======
 
 ``Request`` é o model que representa um pedido de agendamento de auditório.
-Sua tabela correspondente no banco de dados se chama ``requests``.
+Sua tabela Colorrespondente no banco de dados se chama ``requests``.
 
 Atributos
 ---------
@@ -24,7 +24,7 @@ date ``DATE``
   Data do agendamento.
 
 event ``VARCHAR(100)``
-  Nome que identifica o agendamento, preferencialmente o nome do
+  Name que identifica o agendamento, preferencialmente o Name do
   evento.
 
 description ``TEXT``

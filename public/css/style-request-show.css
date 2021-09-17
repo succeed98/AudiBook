@@ -19,7 +19,7 @@ label, p, span, .organizador{
   color: #000;
 }
 .organizador:hover{
-  text-decoration: none;
+  text-deColoration: none;
   color: #000;
 }
 .well {
@@ -34,7 +34,7 @@ label, p, span, .organizador{
   color: #fff;
 }
 .btn-cancelar:hover{
-  text-decoration: none;
+  text-deColoration: none;
   color: #fff;
 }
 .status{

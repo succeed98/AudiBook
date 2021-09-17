@@ -24,16 +24,16 @@
 					v-model="motive_input"
 					v-on:keyup.enter="add"
 					id="motive-input"
-					placeholder="Feriado prolongado..."></input>
+					placeholder="Extended holiday..."></input>
 				</div>
 
 				<div class="col-md-2 check">
 					<input type="checkbox" class="ckeckbox"
-					v-model="block_input"> Bloquear</input>
+					v-model="block_input"> Block</input>
 				</div>
 
 				<div class="col-md-2">
-					<button style="color:#fff;" class="btn btn-primary" type="button" v-on:click="add">Adicionar</button>
+					<button style="color:#fff;" class="btn btn-primary" type="button" v-on:click="add">add</button>
 				</div>
 			</div>
 		</div>
@@ -42,7 +42,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2 class="text-center">Histórico de bloqueio</h2>
+					<h2 class="text-center">blocking history</h2>
 				</div>
 			</div>
 		</div>

@@ -5,7 +5,7 @@
     border-radius: 8px;
   }
   a{
-			text-decoration: none;
+			text-deColoration: none;
       font-size: 14px;
 			color:#fff;
 			padding: 20px 10px 20px 10px;

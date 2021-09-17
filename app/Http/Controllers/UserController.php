@@ -65,12 +65,12 @@ class UserController extends Controller
             ],
             'password' => 'nullable|string|min:6|confirmed',
         ], [
-            'password.min' => 'O campo senha deve ter pelo menos 6 caracteres.',
+            'password.min' => 'O campo Password deve ter pelo menos 6 caracteres.',
             'password.confirmed' => 'A confirmação não bate.',
-            'name.required' => 'O campo nome é obrigatório.',
-            'name.max' => 'O campo nome deve ter até 255 caracteres.',
-            'color.required' => 'O campo cor é obrigatório.',
-            'color.regex' => 'Formato inválido no campo cor.',
+            'name.required' => 'O campo Name é obrigatório.',
+            'name.max' => 'O campo Name deve ter até 255 caracteres.',
+            'color.required' => 'O campo Color é obrigatório.',
+            'color.regex' => 'Formato inválido no campo Color.',
         ]);
 
         $user->name = $request->name;

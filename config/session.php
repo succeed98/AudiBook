@@ -66,7 +66,7 @@ return [
     |
     | When using the "database" or "redis" session drivers, you may specify a
     | connection that should be used to manage these sessions. This should
-    | correspond to a connection in your database configuration options.
+    | Colorrespond to a connection in your database configuration options.
     |
     */
 
@@ -92,7 +92,7 @@ return [
     |
     | When using the "apc" or "memcached" session drivers, you may specify a
     | cache store that should be used for these sessions. This value must
-    | correspond with one of the application's configured cache stores.
+    | Colorrespond with one of the application's configured cache stores.
     |
     */
 

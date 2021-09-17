@@ -655,7 +655,7 @@ module.exports = function xhrAdapter(config) {
     var loadEvent = 'onreadystatechange';
     var xDomain = false;
 
-    // For IE 8/9 CORS support
+    // For IE 8/9 ColorS support
     // Only supports POST and GET calls and doesn't returns the response headers.
     // DON'T do this for testing b/c XMLHttpRequest is mocked, not XDomainRequest.
     if ("development" !== 'test' &&
@@ -986,7 +986,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
  * Lodash <https://lodash.com/>
  * Copyright JS Foundation and other contributors <https://js.foundation/>
  * Released under MIT license <https://lodash.com/license>
- * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+ * Based on UndersColore.js 1.8.3 <http://undersColorejs.org/LICENSE>
  * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
  */
 ;(function() {
@@ -1001,7 +1001,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
   var LARGE_ARRAY_SIZE = 200;
 
   /** Error message constants. */
-  var CORE_ERROR_TEXT = 'Unsupported core-js use. Try https://npms.io/search?q=ponyfill.',
+  var ColorE_ERROR_TEXT = 'Unsupported Colore-js use. Try https://npms.io/search?q=ponyfill.',
       FUNC_ERROR_TEXT = 'Expected a function';
 
   /** Used to stand-in for `undefined` hash values. */
@@ -1256,7 +1256,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
     rsEmoji
   ].join('|'), 'g');
 
-  /** Used to detect strings with [zero-width joiners or code points from the astral planes](http://eev.ee/blog/2015/09/12/dark-corners-of-unicode/). */
+  /** Used to detect strings with [zero-width joiners or code points from the astral planes](http://eev.ee/blog/2015/09/12/dark-Colorners-of-unicode/). */
   var reHasUnicode = RegExp('[' + rsZWJ + rsAstralRange  + rsComboRange + rsVarRange + ']');
 
   /** Used to detect strings that need a more robust regexp to match words. */
@@ -1922,7 +1922,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
 
   /**
    * The base implementation of `_.sortBy` which uses `comparer` to define the
-   * sort order of `array` and replaces criteria objects with their corresponding
+   * sort order of `array` and replaces criteria objects with their Colorresponding
    * values.
    *
    * @private
@@ -1984,7 +1984,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
 
   /**
    * The base implementation of `_.toPairs` and `_.toPairsIn` which creates an array
-   * of key-value pairs for `object` corresponding to the property names of `props`.
+   * of key-value pairs for `object` Colorresponding to the property names of `props`.
    *
    * @private
    * @param {Object} object The object to query.
@@ -2012,7 +2012,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
 
   /**
    * The base implementation of `_.values` and `_.valuesIn` which creates an
-   * array of `object` property values corresponding to the property names
+   * array of `object` property values Colorresponding to the property names
    * of `props`.
    *
    * @private
@@ -2426,8 +2426,8 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
         funcProto = Function.prototype,
         objectProto = Object.prototype;
 
-    /** Used to detect overreaching core-js shims. */
-    var coreJsData = context['__core-js_shared__'];
+    /** Used to detect overreaching Colore-js shims. */
+    var ColoreJsData = context['__Colore-js_shared__'];
 
     /** Used to resolve the decompiled source of functions. */
     var funcToString = funcProto.toString;
@@ -2440,7 +2440,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
 
     /** Used to detect methods masquerading as native. */
     var maskSrcKey = (function() {
-      var uid = /[^.]+$/.exec(coreJsData && coreJsData.keys && coreJsData.keys.IE_PROTO || '');
+      var uid = /[^.]+$/.exec(ColoreJsData && ColoreJsData.keys && ColoreJsData.keys.IE_PROTO || '');
       return uid ? ('Symbol(src)_1.' + uid) : '';
     }());
 
@@ -3663,7 +3663,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
           result = initCloneByTag(value, tag, baseClone, isDeep);
         }
       }
-      // Check for circular references and return its corresponding clone.
+      // Check for circular references and return its Colorresponding clone.
       stack || (stack = new Stack);
       var stacked = stack.get(value);
       if (stacked) {
@@ -5190,7 +5190,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
     }
 
     /**
-     * The base implementation of `_.toNumber` which doesn't ensure correct
+     * The base implementation of `_.toNumber` which doesn't ensure Colorrect
      * conversions of binary, hexadecimal, or octal string values.
      *
      * @private
@@ -5643,7 +5643,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
      *
      * If `orders` is unspecified, all values are sorted in ascending order. Otherwise,
      * specify an order of "desc" for descending or "asc" for ascending sort order
-     * of corresponding values.
+     * of Colorresponding values.
      *
      * @private
      * @param {Object} object The object to compare.
@@ -5670,7 +5670,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
       }
       // Fixes an `Array#sort` bug in the JS engine embedded in Adobe applications
       // that causes it, under certain circumstances, to provide the same value for
-      // `object` and `other`. See https://github.com/jashkenas/underscore/pull/1247
+      // `object` and `other`. See https://github.com/jashkenas/undersColore/pull/1247
       // for more details.
       //
       // This also ensures a stable sort in V8 and other engines.
@@ -7386,7 +7386,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
      * @param {*} value The value to check.
      * @returns {boolean} Returns `true` if `func` is maskable, else `false`.
      */
-    var isMaskable = coreJsData ? isFunction : stubFalse;
+    var isMaskable = ColoreJsData ? isFunction : stubFalse;
 
     /**
      * Checks if `value` is likely a prototype object.
@@ -7597,7 +7597,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
     }
 
     /**
-     * Reorder `array` according to the specified indexes where the element at
+     * Reorder `array` acColording to the specified indexes where the element at
      * the first index is assigned as the first element, the element at
      * the second index is assigned as the second element, and so on.
      *
@@ -8782,7 +8782,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
     }
 
     /**
-     * Removes elements from `array` corresponding to `indexes` and returns an
+     * Removes elements from `array` Colorresponding to `indexes` and returns an
      * array of removed elements.
      *
      * **Note:** Unlike `_.at`, this method mutates `array`.
@@ -9638,7 +9638,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
 
     /**
      * This method is like `_.fromPairs` except that it accepts two arrays,
-     * one of property identifiers and one of corresponding values.
+     * one of property identifiers and one of Colorresponding values.
      *
      * @static
      * @memberOf _
@@ -10054,7 +10054,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
 
     /**
      * Creates an object composed of keys generated from the results of running
-     * each element of `collection` thru `iteratee`. The corresponding value of
+     * each element of `collection` thru `iteratee`. The Colorresponding value of
      * each key is the number of times the key was returned by `iteratee`. The
      * iteratee is invoked with one argument: (value).
      *
@@ -10370,7 +10370,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
     /**
      * Creates an object composed of keys generated from the results of running
      * each element of `collection` thru `iteratee`. The order of grouped values
-     * is determined by the order they occur in `collection`. The corresponding
+     * is determined by the order they occur in `collection`. The Colorresponding
      * value of each key is an array of elements responsible for generating the
      * key. The iteratee is invoked with one argument: (value).
      *
@@ -10477,7 +10477,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
 
     /**
      * Creates an object composed of keys generated from the results of running
-     * each element of `collection` thru `iteratee`. The corresponding value of
+     * each element of `collection` thru `iteratee`. The Colorresponding value of
      * each key is the last element responsible for generating the key. The
      * iteratee is invoked with one argument: (value).
      *
@@ -10558,7 +10558,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
      * This method is like `_.sortBy` except that it allows specifying the sort
      * orders of the iteratees to sort by. If `orders` is unspecified, all values
      * are sorted in ascending order. Otherwise, specify an order of "desc" for
-     * descending or "asc" for ascending sort order of corresponding values.
+     * descending or "asc" for ascending sort order of Colorresponding values.
      *
      * @static
      * @memberOf _
@@ -11265,7 +11265,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
      * If `wait` is `0` and `leading` is `false`, `func` invocation is deferred
      * until to the next tick, similar to `setTimeout` with a timeout of `0`.
      *
-     * See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
+     * See [David Colorbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
      * for details over the differences between `_.debounce` and `_.throttle`.
      *
      * @static
@@ -11739,7 +11739,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
     });
 
     /**
-     * Creates a function that invokes `func` with arguments arranged according
+     * Creates a function that invokes `func` with arguments arranged acColording
      * to the specified `indexes` where the argument value at the first index is
      * provided as the first argument, the argument value at the second index is
      * provided as the second argument, and so on.
@@ -11864,7 +11864,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
      * If `wait` is `0` and `leading` is `false`, `func` invocation is deferred
      * until to the next tick, similar to `setTimeout` with a timeout of `0`.
      *
-     * See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
+     * See [David Colorbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
      * for details over the differences between `_.throttle` and `_.debounce`.
      *
      * @static
@@ -12120,7 +12120,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
 
     /**
      * Checks if `object` conforms to `source` by invoking the predicate
-     * properties of `source` with the corresponding property values of `object`.
+     * properties of `source` with the Colorresponding property values of `object`.
      *
      * **Note:** This method is equivalent to `_.conforms` when `source` is
      * partially applied.
@@ -12897,12 +12897,12 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
      * Checks if `value` is a pristine native function.
      *
      * **Note:** This method can't reliably detect native functions in the presence
-     * of the core-js package because core-js circumvents this kind of detection.
-     * Despite multiple requests, the core-js maintainer has made it clear: any
+     * of the Colore-js package because Colore-js circumvents this kind of detection.
+     * Despite multiple requests, the Colore-js maintainer has made it clear: any
      * attempt to fix the detection will be obstructed. As a result, we're left
      * with little choice but to throw an error. Unfortunately, this also affects
      * packages, like [babel-polyfill](https://www.npmjs.com/package/babel-polyfill),
-     * which rely on core-js.
+     * which rely on Colore-js.
      *
      * @static
      * @memberOf _
@@ -12921,7 +12921,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
      */
     function isNative(value) {
       if (isMaskable(value)) {
-        throw new Error(CORE_ERROR_TEXT);
+        throw new Error(ColorE_ERROR_TEXT);
       }
       return baseIsNative(value);
     }
@@ -13502,7 +13502,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
 
     /**
      * Converts `value` to a safe integer. A safe integer can be compared and
-     * represented correctly.
+     * represented Colorrectly.
      *
      * @static
      * @memberOf _
@@ -13702,7 +13702,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
     });
 
     /**
-     * Creates an array of values corresponding to `paths` of `object`.
+     * Creates an array of values Colorresponding to `paths` of `object`.
      *
      * @static
      * @memberOf _
@@ -14185,7 +14185,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
     /**
      * This method is like `_.invert` except that the inverted object is generated
      * from the results of running each element of `object` thru `iteratee`. The
-     * corresponding inverted value of each inverted key is an array of keys
+     * Colorresponding inverted value of each inverted key is an array of keys
      * responsible for generating the inverted value. The iteratee is invoked
      * with one argument: (value).
      *
@@ -15183,7 +15183,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
 
     /**
      * Converts the characters "&", "<", ">", '"', and "'" in `string` to their
-     * corresponding HTML entities.
+     * Colorresponding HTML entities.
      *
      * **Note:** No other characters are escaped. To escape additional
      * characters use a third-party library like [_he_](https://mths.be/he).
@@ -15786,7 +15786,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
         index = offset + match.length;
 
         // The JS engine embedded in Adobe products needs `match` returned in
-        // order to produce the correct `offset` value.
+        // order to produce the Colorrect `offset` value.
         return match;
       });
 
@@ -16086,7 +16086,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
     /**
      * The inverse of `_.escape`; this method converts the HTML entities
      * `&amp;`, `&lt;`, `&gt;`, `&quot;`, and `&#39;` in `string` to
-     * their corresponding characters.
+     * their Colorresponding characters.
      *
      * **Note:** No other HTML entities are unescaped. To unescape additional
      * HTML entities use a third-party library like [_he_](https://mths.be/he).
@@ -16248,7 +16248,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
     });
 
     /**
-     * Creates a function that iterates over `pairs` and invokes the corresponding
+     * Creates a function that iterates over `pairs` and invokes the Colorresponding
      * function of the first predicate to return truthy. The predicate-function
      * pairs are invoked with the `this` binding and arguments of the created
      * function.
@@ -16300,7 +16300,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
 
     /**
      * Creates a function that invokes the predicate properties of `source` with
-     * the corresponding property values of a given object, returning `true` if
+     * the Colorresponding property values of a given object, returning `true` if
      * all predicates return truthy, else `false`.
      *
      * **Note:** The created function is equivalent to `_.conformsTo` with
@@ -18048,7 +18048,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
     root._ = _;
 
     // Define as an anonymous module so, through path mapping, it can be
-    // referenced as the "underscore" module.
+    // referenced as the "undersColore" module.
     !(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
       return _;
     }.call(exports, __webpack_require__, exports, module),
@@ -18607,7 +18607,7 @@ jQuery.extend( {
 
 	now: Date.now,
 
-	// jQuery.support is not used in Core but other projects attach their
+	// jQuery.support is not used in Colore but other projects attach their
 	// properties to it so it needs to exist.
 	support: support
 } );
@@ -19400,7 +19400,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 			}
 
 			// Support: IE8
-			// Boolean attributes and "value" are not treated correctly
+			// Boolean attributes and "value" are not treated Colorrectly
 			if ( !el.querySelectorAll("[selected]").length ) {
 				rbuggyQSA.push( "\\[" + whitespace + "*(?:value|" + booleans + ")" );
 			}
@@ -20013,7 +20013,7 @@ Expr = Sizzle.selectors = {
 							}
 						}
 
-						// Incorporate the offset, then check against cycle size
+						// InColorporate the offset, then check against cycle size
 						diff -= last;
 						return diff === first || ( diff % first === 0 && diff / first >= 0 );
 					}
@@ -21784,7 +21784,7 @@ jQuery.extend( {
 								process();
 							} else {
 
-								// Call an optional hook to record the stack, in case of exception
+								// Call an optional hook to reColord the stack, in case of exception
 								// since it's otherwise lost when execution goes async
 								if ( jQuery.Deferred.getStackHook ) {
 									process.stackTrace = jQuery.Deferred.getStackHook();
@@ -22972,7 +22972,7 @@ function buildFragment( elems, context, scripts, selection, ignored ) {
 	div.appendChild( input );
 
 	// Support: Android <=4.1 only
-	// Older WebKit doesn't clone checked state correctly in fragments
+	// Older WebKit doesn't clone checked state Colorrectly in fragments
 	support.checkClone = div.cloneNode( true ).cloneNode( true ).lastChild.checked;
 
 	// Support: IE <=11 only
@@ -23426,7 +23426,7 @@ jQuery.event = {
 		},
 		focus: {
 
-			// Fire native event if possible so blur/focus sequence is correct
+			// Fire native event if possible so blur/focus sequence is Colorrect
 			trigger: function() {
 				if ( this !== safeActiveElement() && this.focus ) {
 					this.focus();
@@ -23494,7 +23494,7 @@ jQuery.Event = function( src, props ) {
 		this.type = src.type;
 
 		// Events bubbling up the document may have been marked as prevented
-		// by a handler lower down the tree; reflect the correct value.
+		// by a handler lower down the tree; reflect the Colorrect value.
 		this.isDefaultPrevented = src.defaultPrevented ||
 				src.defaultPrevented === undefined &&
 
@@ -23849,7 +23849,7 @@ function domManip( collection, args, callback, ignored ) {
 
 			// Use the original fragment for the last item
 			// instead of the first because it can end up
-			// being emptied incorrectly in certain situations (#8070).
+			// being emptied inColorrectly in certain situations (#8070).
 			for ( ; i < l; i++ ) {
 				node = fragment;
 
@@ -24997,7 +24997,7 @@ function defaultPrefilter( elem, props, opts ) {
 	if ( isBox && elem.nodeType === 1 ) {
 
 		// Support: IE <=9 - 11, Edge 12 - 13
-		// Record all 3 overflow attributes because IE does not infer the shorthand
+		// ReColord all 3 overflow attributes because IE does not infer the shorthand
 		// from identically-valued overflowX and overflowY
 		opts.overflow = [ style.overflow, style.overflowX, style.overflowY ];
 
@@ -25125,7 +25125,7 @@ function propFilter( props, specialEasing ) {
 			delete props[ name ];
 
 			// Not quite $.extend, this won't overwrite existing keys.
-			// Reusing 'index' because we have the correct "name"
+			// Reusing 'index' because we have the Colorrect "name"
 			for ( index in value ) {
 				if ( !( index in props ) ) {
 					props[ index ] = value[ index ];
@@ -25769,7 +25769,7 @@ jQuery.extend( {
 
 				// Support: IE <=9 - 11 only
 				// elem.tabIndex doesn't always return the
-				// correct value when it hasn't been explicitly set
+				// Colorrect value when it hasn't been explicitly set
 				// https://web.archive.org/web/20141116233347/http://fluidproject.org/blog/2008/01/09/getting-setting-and-removing-tabindex-values-with-javascript/
 				// Use proper attribute retrieval(#12072)
 				var tabindex = jQuery.find.attr( elem, "tabindex" );
@@ -25851,7 +25851,7 @@ jQuery.each( [
 
 
 
-	// Strip and collapse whitespace according to HTML spec
+	// Strip and collapse whitespace acColording to HTML spec
 	// https://html.spec.whatwg.org/multipage/infrastructure.html#strip-and-collapse-whitespace
 	function stripAndCollapse( value ) {
 		var tokens = value.match( rnothtmlwhite ) || [];
@@ -26714,7 +26714,7 @@ function ajaxExtend( target, src ) {
 
 /* Handles responses to an ajax request:
  * - finds the right dataType (mediates between content-type and expected dataType)
- * - returns the corresponding response
+ * - returns the Colorresponding response
  */
 function ajaxHandleResponses( s, jqXHR, responses ) {
 
@@ -26762,7 +26762,7 @@ function ajaxHandleResponses( s, jqXHR, responses ) {
 
 	// If we found a dataType
 	// We add the dataType to the list if needed
-	// and return the corresponding response
+	// and return the Colorresponding response
 	if ( finalDataType ) {
 		if ( finalDataType !== dataTypes[ 0 ] ) {
 			dataTypes.unshift( finalDataType );
@@ -27126,7 +27126,7 @@ jQuery.extend( {
 				urlAnchor.href = s.url;
 
 				// Support: IE <=8 - 11 only
-				// Anchor's host property isn't correctly set when s.url is relative
+				// Anchor's host property isn't Colorrectly set when s.url is relative
 				urlAnchor.href = urlAnchor.href;
 				s.crossDomain = originAnchor.protocol + "//" + originAnchor.host !==
 					urlAnchor.protocol + "//" + urlAnchor.host;
@@ -27210,7 +27210,7 @@ jQuery.extend( {
 			}
 		}
 
-		// Set the correct header, if data is being sent
+		// Set the Colorrect header, if data is being sent
 		if ( s.data && s.hasContent && s.contentType !== false || options.contentType ) {
 			jqXHR.setRequestHeader( "Content-Type", s.contentType );
 		}
@@ -27542,14 +27542,14 @@ var xhrSuccessStatus = {
 	},
 	xhrSupported = jQuery.ajaxSettings.xhr();
 
-support.cors = !!xhrSupported && ( "withCredentials" in xhrSupported );
+support.Colors = !!xhrSupported && ( "withCredentials" in xhrSupported );
 support.ajax = xhrSupported = !!xhrSupported;
 
 jQuery.ajaxTransport( function( options ) {
 	var callback, errorCallback;
 
 	// Cross domain only allowed if supported through XMLHttpRequest
-	if ( support.cors || xhrSupported && !options.crossDomain ) {
+	if ( support.Colors || xhrSupported && !options.crossDomain ) {
 		return {
 			send: function( headers, complete ) {
 				var i,
@@ -28121,7 +28121,7 @@ jQuery.fn.extend( {
 			// Get *real* offsetParent
 			offsetParent = this.offsetParent();
 
-			// Get correct offsets
+			// Get Colorrect offsets
 			offset = this.offset();
 			if ( !nodeName( offsetParent[ 0 ], "html" ) ) {
 				parentOffset = offsetParent.offset();
@@ -29984,7 +29984,7 @@ if (typeof jQuery === 'undefined') {
       elRect = $.extend({}, elRect, { width: elRect.right - elRect.left, height: elRect.bottom - elRect.top })
     }
     var isSvg = window.SVGElement && el instanceof window.SVGElement
-    // Avoid using $.offset() on SVGs since it gives incorrect results in jQuery 3.
+    // Avoid using $.offset() on SVGs since it gives inColorrect results in jQuery 3.
     // See https://github.com/twbs/bootstrap/issues/20280
     var elOffset  = isBody ? { top: 0, left: 0 } : (isSvg ? null : $element.offset())
     var scroll    = { scroll: isBody ? document.documentElement.scrollTop || document.body.scrollTop : $element.scrollTop() }
@@ -30984,7 +30984,7 @@ function runTimeout(fun) {
             // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
             return cachedSetTimeout.call(null, fun, 0);
         } catch(e){
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context Colorrect otherwise it will throw a global error
             return cachedSetTimeout.call(this, fun, 0);
         }
     }
@@ -31009,7 +31009,7 @@ function runClearTimeout(marker) {
             // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
             return cachedClearTimeout.call(null, marker);
         } catch (e){
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context Colorrect otherwise it will throw a global error.
             // Some versions of I.E. have different rules for clearTimeout vs setTimeout
             return cachedClearTimeout.call(this, marker);
         }
@@ -36962,7 +36962,7 @@ function bind (fn, ctx) {
         : fn.call(ctx, a)
       : fn.call(ctx)
   }
-  // record original fn length
+  // reColord original fn length
   boundFn._length = fn.length;
   return boundFn
 }
@@ -37111,7 +37111,7 @@ var LIFECYCLE_HOOKS = [
 
 var config = ({
   /**
-   * Option merge strategies (used in core/util/options)
+   * Option merge strategies (used in Colore/util/options)
    */
   optionMergeStrategies: Object.create(null),
 
@@ -37131,7 +37131,7 @@ var config = ({
   devtools: "development" !== 'production',
 
   /**
-   * Whether to record perf
+   * Whether to reColord perf
    */
   performance: false,
 
@@ -38132,7 +38132,7 @@ function normalizeDirectives (options) {
 
 /**
  * Merge two option objects into a new one.
- * Core utility used in both instantiation and inheritance.
+ * Colore utility used in both instantiation and inheritance.
  */
 function mergeOptions (
   parent,
@@ -40116,7 +40116,7 @@ function initMethods (vm, methods) {
       if (methods[key] == null) {
         warn(
           "Method \"" + key + "\" has an undefined value in the component definition. " +
-          "Did you reference the function correctly?",
+          "Did you reference the function Colorrectly?",
           vm
         );
       }
@@ -40298,7 +40298,7 @@ function createFunctionalComponent (
     if (isDef(data.props)) { mergeProps(props, data.props); }
   }
   // ensure the createElement function in functional components
-  // gets a unique context - this is necessary for correct named slot check
+  // gets a unique context - this is necessary for Colorrect named slot check
   var _context = Object.create(context);
   var h = function (a, b, c, d) { return createElement(_context, a, b, c, d, true); };
   var vnode = Ctor.options.render.call(null, h, {
@@ -40375,7 +40375,7 @@ var componentVNodeHooks = {
         // vue-router#1212
         // During updates, a kept-alive component's child components may
         // change, so directly walking the tree here may call activated hooks
-        // on incorrect children. Instead we push them into a queue which will
+        // on inColorrect children. Instead we push them into a queue which will
         // be processed after the whole patch process ended.
         queueActivatedComponent(componentInstance);
       } else {
@@ -41955,7 +41955,7 @@ function createPatchFunction (backend) {
         ) {
           warn(
             'Unknown custom element: <' + tag + '> - did you ' +
-            'register the component correctly? For recursive components, ' +
+            'register the component Colorrectly? For recursive components, ' +
             'make sure to provide the "name" option.',
             vnode.context
           );
@@ -42184,7 +42184,7 @@ function createPatchFunction (backend) {
     var oldKeyToIdx, idxInOld, elmToMove, refElm;
 
     // removeOnly is a special flag used only by <transition-group>
-    // to ensure removed elements stay in correct relative positions
+    // to ensure removed elements stay in Colorrect relative positions
     // during leaving transitions
     var canMove = !removeOnly;
 
@@ -42463,7 +42463,7 @@ function createPatchFunction (backend) {
             } else if (true) {
               warn(
                 'The client-side rendered virtual DOM tree is not matching ' +
-                'server-rendered content. This is likely caused by incorrect ' +
+                'server-rendered content. This is likely caused by inColorrect ' +
                 'HTML markup, for example nesting block-level elements inside ' +
                 '<p>, or missing <tbody>. Bailing hydration and performing ' +
                 'full client-side render.'
@@ -44070,7 +44070,7 @@ function leave (vnode, rm) {
     if (cb.cancelled) {
       return
     }
-    // record leaving element
+    // reColord leaving element
     if (!vnode.data.show) {
       (el.parentNode._pending || (el.parentNode._pending = {}))[(vnode.key)] = vnode;
     }
@@ -44108,7 +44108,7 @@ function checkDuration (val, name, vnode) {
   } else if (isNaN(val)) {
     warn(
       "<transition> explicit " + name + " duration is NaN - " +
-      'the duration expression might be incorrect.',
+      'the duration expression might be inColorrect.',
       vnode.context
     );
   }
@@ -44653,7 +44653,7 @@ var TransitionGroup = {
     // we divide the work into three loops to avoid mixing DOM reads and writes
     // in each iteration - which helps prevent layout thrashing.
     children.forEach(callPendingCbs);
-    children.forEach(recordPosition);
+    children.forEach(reColordPosition);
     children.forEach(applyTranslation);
 
     // force reflow to put everything in position
@@ -44717,7 +44717,7 @@ function callPendingCbs (c) {
   }
 }
 
-function recordPosition (c) {
+function reColordPosition (c) {
   c.data.newPos = c.elm.getBoundingClientRect();
 }
 
@@ -45673,7 +45673,7 @@ function processIfConditions (el, parent) {
   } else if (true) {
     warn$2(
       "v-" + (el.elseif ? ('else-if="' + el.elseif + '"') : 'else') + " " +
-      "used on element <" + (el.tag) + "> without corresponding v-if."
+      "used on element <" + (el.tag) + "> without Colorresponding v-if."
     );
   }
 }
@@ -46359,7 +46359,7 @@ function genData$2 (el, state) {
   if (el.pre) {
     data += "pre:true,";
   }
-  // record original tag name for components using "is" attribute
+  // reColord original tag name for components using "is" attribute
   if (el.component) {
     data += "tag:\"" + (el.tag) + "\",";
   }
@@ -47010,7 +47010,7 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-450bd3aa", Component.options)
+    hotAPI.createReColord("data-v-450bd3aa", Component.options)
   } else {
     hotAPI.reload("data-v-450bd3aa", Component.options)
 ' + '  }
@@ -47146,7 +47146,7 @@ var render = function() {
           ])
         : _c("li", [
             _c("span", { staticClass: "sem-notification" }, [
-              _vm._v("Sem notificações.")
+              _vm._v("No notifications.")
             ])
           ])
     ])
@@ -47198,7 +47198,7 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-4319cf46", Component.options)
+    hotAPI.createReColord("data-v-4319cf46", Component.options)
   } else {
     hotAPI.reload("data-v-4319cf46", Component.options)
 ' + '  }
@@ -47371,7 +47371,7 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-0960c662", Component.options)
+    hotAPI.createReColord("data-v-0960c662", Component.options)
   } else {
     hotAPI.reload("data-v-0960c662", Component.options)
 ' + '  }
@@ -47621,7 +47621,7 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1f0e9bb8", Component.options)
+    hotAPI.createReColord("data-v-1f0e9bb8", Component.options)
   } else {
     hotAPI.reload("data-v-1f0e9bb8", Component.options)
 ' + '  }
@@ -47892,7 +47892,7 @@ var render = function() {
             attrs: {
               type: "text",
               id: "motive-input",
-              placeholder: "Feriado prolongado..."
+              placeholder: "Extended holiday..."
             },
             domProps: { value: _vm.motive_input },
             on: {
@@ -47954,7 +47954,7 @@ var render = function() {
               }
             }
           }),
-          _vm._v(" Bloquear")
+          _vm._v(" Block")
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "col-md-2" }, [
@@ -47966,7 +47966,7 @@ var render = function() {
               attrs: { type: "button" },
               on: { click: _vm.add }
             },
-            [_vm._v("Adicionar")]
+            [_vm._v("add")]
           )
         ])
       ])
@@ -48037,7 +48037,7 @@ var staticRenderFns = [
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-md-12" }, [
           _c("h2", { staticClass: "text-center" }, [
-            _vm._v("Histórico de bloqueio")
+            _vm._v("blocking history")
           ])
         ])
       ])

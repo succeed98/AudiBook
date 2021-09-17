@@ -196,14 +196,14 @@ var Stemmer = function() {
 
 
 /**
- * Simple result scoring code.
+ * Simple result sColoring code.
  */
-var Scorer = {
-  // Implement the following function to further tweak the score for each result
-  // The function takes a result array [filename, title, anchor, descr, score]
-  // and returns the new score.
+var SColorer = {
+  // Implement the following function to further tweak the sColore for each result
+  // The function takes a result array [filename, title, anchor, descr, sColore]
+  // and returns the new sColore.
   /*
-  score: function(result) {
+  sColore: function(result) {
     return result[4];
   },
   */
@@ -212,7 +212,7 @@ var Scorer = {
   objNameMatch: 11,
   // or matches in the last dotted part of the object name
   objPartialMatch: 6,
-  // Additive scores depending on the priority of the object
+  // Additive sColores depending on the priority of the object
   objPrio: {0:  15,   // used to be importantResults
             1:  5,   // used to be objectResults
             2: -5},  // used to be unimportantResults
@@ -419,7 +419,7 @@ var Search = {
     var i;
     var stopwords = ["a","and","are","as","at","be","but","by","for","if","in","into","is","it","near","no","not","of","on","or","such","that","the","their","then","there","these","they","this","to","was","will","with"];
 
-    // stem the searchterms and add them to the correct list
+    // stem the searchterms and add them to the Colorrect list
     var stemmer = new Stemmer();
     var searchterms = [];
     var excluded = [];
@@ -443,7 +443,7 @@ var Search = {
         word = tmp[i];
       }
       var toAppend;
-      // select the correct list
+      // select the Colorrect list
       if (word[0] == '-') {
         toAppend = excluded;
         word = word.substr(1);
@@ -466,7 +466,7 @@ var Search = {
     var terms = this._index.terms;
     var titleterms = this._index.titleterms;
 
-    // array of [filename, title, anchor, descr, score]
+    // array of [filename, title, anchor, descr, sColore]
     var results = [];
     $('#search-progress').empty();
 
@@ -480,13 +480,13 @@ var Search = {
     // lookup as search terms in fulltext
     results = results.concat(this.performTermsSearch(searchterms, excluded, terms, titleterms));
 
-    // let the scorer override scores with a custom scoring function
-    if (Scorer.score) {
+    // let the sColorer override sColores with a custom sColoring function
+    if (SColorer.sColore) {
       for (i = 0; i < results.length; i++)
-        results[i][4] = Scorer.score(results[i]);
+        results[i][4] = SColorer.sColore(results[i]);
     }
 
-    // now sort the results by score (in opposite order of appearance, since the
+    // now sort the results by sColore (in opposite order of appearance, since the
     // display function below uses pop() to retrieve items) and then
     // alphabetically
     results.sort(function(a, b) {
@@ -497,7 +497,7 @@ var Search = {
       } else if (left < right) {
         return -1;
       } else {
-        // same score: sort alphabetically
+        // same sColore: sort alphabetically
         left = a[1].toLowerCase();
         right = b[1].toLowerCase();
         return (left > right) ? -1 : ((left < right) ? 1 : 0);
@@ -565,7 +565,7 @@ var Search = {
         Search.stopPulse();
         Search.title.text(_('Search Results'));
         if (!resultCount)
-          Search.status.text(_('Your search did not match any documents. Please make sure that all words are spelled correctly and that you\'ve selected enough categories.'));
+          Search.status.text(_('Your search did not match any documents. Please make sure that all words are spelled Colorrectly and that you\'ve selected enough categories.'));
         else
             Search.status.text(_('Search finished, found %s page(s) matching the search query.').replace('%s', resultCount));
         Search.status.fadeIn(500);
@@ -591,15 +591,15 @@ var Search = {
       for (var name in objects[prefix]) {
         var fullname = (prefix ? prefix + '.' : '') + name;
         if (fullname.toLowerCase().indexOf(object) > -1) {
-          var score = 0;
+          var sColore = 0;
           var parts = fullname.split('.');
           // check for different match types: exact matches of full name or
           // "last name" (i.e. last dotted part)
           if (fullname == object || parts[parts.length - 1] == object) {
-            score += Scorer.objNameMatch;
+            sColore += SColorer.objNameMatch;
           // matches in last name
           } else if (parts[parts.length - 1].indexOf(object) > -1) {
-            score += Scorer.objPartialMatch;
+            sColore += SColorer.objPartialMatch;
           }
           var match = objects[prefix][name];
           var objname = objnames[match[1]][2];
@@ -627,13 +627,13 @@ var Search = {
             anchor = fullname;
           else if (anchor == '-')
             anchor = objnames[match[1]][1] + '-' + fullname;
-          // add custom score for some objects according to scorer
-          if (Scorer.objPrio.hasOwnProperty(match[2])) {
-            score += Scorer.objPrio[match[2]];
+          // add custom sColore for some objects acColording to sColorer
+          if (SColorer.objPrio.hasOwnProperty(match[2])) {
+            sColore += SColorer.objPrio[match[2]];
           } else {
-            score += Scorer.objPrioDefault;
+            sColore += SColorer.objPrioDefault;
           }
-          results.push([docnames[match[0]], fullname, '#'+anchor, descr, score, filenames[match[0]]]);
+          results.push([docnames[match[0]], fullname, '#'+anchor, descr, sColore, filenames[match[0]]]);
         }
       }
     }
@@ -651,7 +651,7 @@ var Search = {
 
     var i, j, file;
     var fileMap = {};
-    var scoreMap = {};
+    var sColoreMap = {};
     var results = [];
 
     // perform the search on the required terms
@@ -659,8 +659,8 @@ var Search = {
       var word = searchterms[i];
       var files = [];
       var _o = [
-        {files: terms[word], score: Scorer.term},
-        {files: titleterms[word], score: Scorer.title}
+        {files: terms[word], sColore: SColorer.term},
+        {files: titleterms[word], sColore: SColorer.title}
       ];
 
       // no match but word was a required one
@@ -677,12 +677,12 @@ var Search = {
           _files = [_files];
         files = files.concat(_files);
 
-        // set score for the word in each file to Scorer.term
+        // set sColore for the word in each file to SColorer.term
         for (j = 0; j < _files.length; j++) {
           file = _files[j];
-          if (!(file in scoreMap))
-            scoreMap[file] = {}
-          scoreMap[file][word] = o.score;
+          if (!(file in sColoreMap))
+            sColoreMap[file] = {}
+          sColoreMap[file][word] = o.sColore;
         }
       });
 
@@ -717,10 +717,10 @@ var Search = {
 
       // if we have still a valid result we can add it to the result list
       if (valid) {
-        // select one (max) score for the file.
+        // select one (max) sColore for the file.
         // for better ranking, we should calculate ranking by using words statistics like basic tf-idf...
-        var score = $u.max($u.map(fileMap[file], function(w){return scoreMap[file][w]}));
-        results.push([docnames[file], titles[file], '', null, score, filenames[file]]);
+        var sColore = $u.max($u.map(fileMap[file], function(w){return sColoreMap[file][w]}));
+        results.push([docnames[file], titles[file], '', null, sColore, filenames[file]]);
       }
     }
     return results;
