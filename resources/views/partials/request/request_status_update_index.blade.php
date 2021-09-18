@@ -7,13 +7,13 @@
         <a class="btn btn-aceita aceita b-aceita"
            style="color: #fff; text-deColoration: none;"
            href="{{ route('requests.accept', $route_args) }}">
-            Aceitar
+            Accepted
         </a>
 
         <a class="btn btn-rejeitado rejeitado b-rejeitado"
            style="color: #fff; text-deColoration: none;"
            href="{{ route('requests.negate', $route_args) }}">
-            Rejeitar
+            Rejected
         </a>
     </div>
 
@@ -22,7 +22,7 @@
         <a class="btn btn-aceita aceita b-aceita"
            style="color: #fff; text-deColoration: none;"
            href="{{ route('requests.accept', $route_args) }}">
-            Aceitar
+            Accepted
         </a>
 
         <a class="btn btn-pendurado pendurado b-pendurado"
@@ -43,7 +43,7 @@
         <a class="btn btn-rejeitado rejeitado b-rejeitado"
            style="color: #fff; text-deColoration: none;"
            href="{{ route('requests.negate', $route_args) }}">
-            Rejeitar
+            Rejected
         </a>
     </div>
 @endif

@@ -28,7 +28,7 @@
 
                         <div class="form-group">
                             <label class="col-sm-2 col-md-2 col-lg-2 control-label">
-                                Horário:
+                                Hours
                             </label>
                             <div class="col-sm-10 col-md-10 col-lg-10">
                                 <p class="form-control-static">

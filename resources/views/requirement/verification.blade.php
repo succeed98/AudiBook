@@ -15,21 +15,21 @@
 
                 <h1 id="verification-title" class="text-center">Responder à requisição</h1>
                 <div class="form-group">
-                    <label class="col-md-2 control-label">Evento:</label>
+                    <label class="col-md-2 control-label">Event:</label>
                     <div class="col-md-10">
                         <p>{{ $requirement->request->event }}</p>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-md-2 control-label">Data:</label>
+                    <label class="col-md-2 control-label">Date:</label>
                     <div class="col-md-10">
                         <p> {{ $requirement->request->dateC->format('d/m/Y') }}</p>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-md-2 control-label">Horário:</label>
+                    <label class="col-md-2 control-label">Hours</label>
                     <div class="col-md-10">
-                        <p>{{ $requirement->request->beginning->beginningF }} at
+                        <p>{{ $requirement->request->beginning->beginningF }} to
                            {{ $requirement->request->end->endF }}
                         </p>
                     </div>
