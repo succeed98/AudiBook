@@ -89,7 +89,7 @@
                                     @endforeach
                                 </select>
 
-                                <span>até</span>
+                                <span>until</span>
 
                                 <select name="end"
                                         class="btn btn-default dropdown-toggle"

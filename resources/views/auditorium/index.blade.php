@@ -45,7 +45,7 @@
                          style="color: #fff;"
                          type="submit"
                          class="btn btn-primary position-submit"
-                         value="Atualizar Data">
+                         value="Update Date">
                     </div>
                 </form>
             </div>
@@ -112,10 +112,10 @@
 
                             <div class="row capacidade">
                                 <span class="col-xs-4 col-sm-4 col-md-3 col-lg-3 control-label">
-                                    Capacidade:
+                                    Capacity:
                                 </span>
                                 <div class="col-xs-8 col-sm-8 col-md-9 col-lg-9">
-                                    {{ $aud->capacity }} pessoas.
+                                    {{ $aud->capacity }} people.
                                 </div>
                             </div>
 

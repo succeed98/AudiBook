@@ -48,7 +48,7 @@
 <p class="style-variavel">Evento: </p><p class="style-information"> {{ $requirement->request->event }}</p><br><br>
 <p class="style-variavel">Data: </p><p class="style-information">{{ $requirement->request->dateC->format('d/m/Y') }}</p><br><br>
 <p class="style-variavel">Horário: </p><p class="style-information">
-{{ $request->beginning->beginningF }} às {{ $request->end->endF }}
+{{ $request->beginning->beginningF }} at{{ $request->end->endF }}
 </p><br><br>
 <p class="style-variavel">Local: </p><p class="style-information">{{ $requirement->request->auditorium->name }}</p><br><br><br>
 

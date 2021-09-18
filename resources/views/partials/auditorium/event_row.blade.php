@@ -41,7 +41,7 @@
     </div>
 
     <div  class="col-md-6 col-lg-6 control-label">
-        <p  class="horas">{{ $period->beginningF }} às {{ $period->endF }}</p>
+        <p  class="horas">{{ $period->beginningF }} to {{ $period->endF }}</p>
     </div>
 
     <div class="col-md-4 col-lg-4 control-label">

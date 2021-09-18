@@ -32,7 +32,7 @@
                             </label>
                             <div class="col-sm-10 col-md-10 col-lg-10">
                                 <p class="form-control-static">
-                                {{ $request->beginning->beginningF }} às {{ $request->end->endF }}
+                                {{ $request->beginning->beginningF }} at{{ $request->end->endF }}
                                 </p>
                             </div>
                         </div>
