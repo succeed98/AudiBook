@@ -14,17 +14,17 @@ class RolesSeeder extends Seeder
     {
         Bouncer::role()->create([
             'name' => 'admin',
-            'title' => 'Administrador',
+            'title' => 'Administrator',
         ]);
 
         Bouncer::role()->create([
             'name' => 'secre',
-            'title' => 'Secretário',
+            'title' => 'Secretary',
         ]);
 
         Bouncer::role()->create([
             'name' => 'coord',
-            'title' => 'Coordenador',
+            'title' => 'Cordinator',
         ]);
 
         Bouncer::allow('admin')->to('request-always');

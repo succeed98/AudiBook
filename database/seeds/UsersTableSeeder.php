@@ -21,38 +21,38 @@ class UsersTableSeeder extends Seeder
             'password' => bcrypt('123456'),
             'color' => '#E60474',
             'cel' => '(69) 9999-9990',
-            'description' => 'A chefe.',
+            'description' => 'The Administrator.',
         ]);
         $user->assign('admin');
 
         $user = User::create([
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
-            'name' => 'Iulia',
+            'name' => 'Fourteen',
             'email' => 'fourteen@example.com',
             'password' => bcrypt('123456'),
             'color' => '#e5aff7',
             'cel' => '(69) 9999-9991',
-            'description' => 'Filha da chefe.',
+            'description' => 'Secretary of the Adminstrator.',
         ]);
         $user->assign('secre');
 
         DB::table('users')->insert([
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
-            'name' => 'edem',
-            'email' => 'edem@example.com',
+            'name' => 'Karla',
+            'email' => 'karla@example.com',
             'password' => bcrypt('123456'),
             'color' => '#8529CF',
             'cel' => '(69) 9999-9992',
-            'description' => 'Marido da chefe.',
+            'description' => 'secretary of the Administrator',
         ]);
 
         DB::table('users')->insert([
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
-            'name' => 'Opong',
-            'email' => 'opong@example.com',
+            'name' => 'Fahimy',
+            'email' => 'fahimy@example.com',
             'password' => bcrypt('123456'),
             'color' => '#DA0905',
             'cel' => '(69) 9999-9993',
@@ -67,7 +67,7 @@ class UsersTableSeeder extends Seeder
             'password' => bcrypt('123456'),
             'color' => '#e8d16d',
             'cel' => '(69) 9999-9994',
-            'description' => 'Filho mais novo da chefe.',
+            'description' => 'Coordinator',
         ]);
 
         foreach (\App\User::all() as $user) {

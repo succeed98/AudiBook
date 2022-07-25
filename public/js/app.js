@@ -47487,7 +47487,7 @@ var render = function() {
             attrs: {
               type: "text",
               id: "requirement-input",
-              placeholder: "Digite aqui..."
+              placeholder: "Phone number here..."
             },
             domProps: { value: _vm.input },
             on: {

@@ -5,7 +5,7 @@
     <label class="col-sm-2 col-md-2 col-lg-2 control-label"></label>
     <div class="col-sm-9 col-md-9 col-lg-9">
       <div class="input-group">
-        <input type="text" class="form-control" v-model="input" v-on:keyup.enter="add" id="requirement-input" placeholder="Digite aqui...">
+        <input type="text" class="form-control" v-model="input" v-on:keyup.enter="add" id="requirement-input" placeholder="Phone number here...">
         <span class="input-group-btn">
 					<button class="btn btn-default" type="button" v-on:click="add">
 						<i class="fa fa-plus" aria-hidden="true"></i>

@@ -21,13 +21,13 @@ class DefaultRequirementsTableSeeder extends Seeder
         DB::table('default_requirements')->insert([
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
-            'name' => 'Dean',
+            'name' => 'HOD',
         ]);
 
         DB::table('default_requirements')->insert([
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
-            'name' => 'Datashow',
+            'name' => 'Projector',
         ]);
 
         DB::table('default_requirements')->insert([
@@ -39,7 +39,7 @@ class DefaultRequirementsTableSeeder extends Seeder
         DB::table('default_requirements')->insert([
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
-            'name' => 'Mesa de Honra',
+            'name' => 'Table of Honors',
         ]);
     }
 }

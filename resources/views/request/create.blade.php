@@ -167,7 +167,7 @@
                         <div class="form-group">
                             <div class="col-sm-2 col-md-2 col-lg-2 col-sm-offset-2 col-md-offset-2
                                 col-lg-offset-2">
-                                <input type="submit" class="btn btn-primary" value="Agendar">
+                                <input type="submit" class="btn btn-primary" value="submit">
                             </div>
                         </div>
                     </form>
